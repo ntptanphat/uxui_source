@@ -9,9 +9,9 @@
 	$mainNavContainer = $('#main-nav-container');
 	$('#header').on('click', '#hamburger', function(event) {
 		event.preventDefault();
+		
 		$mainNavContainer.fadeIn(function() {
-			$(this).addClass('open');
-
+			$(this).addClass('open');			
 			if ($('.homepage').length > 0) {
 				$.fn.fullpage.setAllowScrolling(false);
 			}
