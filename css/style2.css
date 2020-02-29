@@ -1,5 +1,12 @@
+.section {
+    position: relative;
+}
+.section .intro {
+    position: absolute;
+    top: 10%;
+}
 .home_bg {
-   background-position: center;
+   background-position: center top;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -16,3 +23,10 @@
 .home_bg_4 {
     background-image: url('../images/homepage-background-4.jpg');
 }
+
+@media (max-width: 1440px) {
+    #main-nav-container.open ul a {
+        font-size: 32px;
+        line-height: 1.75em;
+    }
+  }
