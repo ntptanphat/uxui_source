@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Custom Car</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+	<!-- Custom styles for this template -->
+	<link href="css/grayscale.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/fullpagecss.css" rel="stylesheet">
+	<link href="css/style2.css" rel="stylesheet">
+	<link href="css/video.css" rel="stylesheet">
+
+</head>
+
+<body class="home page-template page-template-template-home page-template-template-home-php page page-id-1813 homepage">
+	<header id="header-container" style="background-color: transparent;">
+		<div id="header" class="clearfix">
+			<a href="index.html" id="header-logo" class="sprite hide-text">Kindig It</a>
+			<h1 style="display: none;">
+				Home</h1>
+			<a href="#" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+	</header> <!-- End of Header -->
+	<video autoplay muted loop id="myVideo">
+        <source src="assets/videos/video3.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <div class="content">
+        <div class="content-top">Top</div>
+        <div class="content-center">center</div>
+        <div class="content-bottom">bottom</div>
+        <button id="myBtn" onclick="myFunction()" style="display: none;">Pause</button>
+      </div>
+	<!-- <div id="fullpage">
+		<div class="section home_bg home_bg_1">
+			<div class="intro">
+				<h1 style="font-size: 60px; margin-bottom: 32px; font-family: Arvo;">GALLERY</h1>
+				<p style="color: #fff; font-size: 18px; font-family: Noto Serif;">PREMIUM CUSTOM CARS,
+					YOU KNOW YOU WANNA LOOK</p>
+			</div>
+		</div>
+		<div class="section home_bg home_bg_2">
+		</div>
+		<div class="section home_bg home_bg_3">
+		</div>
+		<div class="section home_bg home_bg_4">
+		</div>
+	</div> -->
+	<!-- ***************************************** -->
+	<section id="main-nav-container">
+		<a href="#" class="close-button"></a>
+		<div class="vertical-container">
+			<div class="vertical-center" style="height: 100%; display: flex; align-items: center;">
+				<nav id="main-nav">
+					<ul id="main-links">
+						<li>
+							<a href="video.html" target="_blank">
+								Gallery </a>
+						</li>
+						<li>
+							<a href="video2.html" target="_blank">
+								Team </a>
+						</li>
+						<li>
+							<a href="video3.html" target="_blank">
+								Bitchin’ Rides </a>
+						</li>
+						<li>
+							<a href="kindigit-process/index.html" target="">
+								Process </a>
+						</li>
+						<li>
+							<a href="http://www.kindigitapparel.com/" target="_blank">
+								Store </a>
+						</li>
+					</ul>
+					<nav class="social-media">
+						<a href="https://www.facebook.com/Kindig-it-Design-108367085644/" target="_blank"
+							class="facebook sprite hide-text"></a>
+						<a href="https://twitter.com/Kindigitdesigns?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+							target="_blank" class="twitter sprite hide-text"></a>
+						<a href="https://www.instagram.com/kindigitdesign/?hl=en" target="_blank"
+							class="instagram sprite hide-text"></a>
+					</nav>
+				</nav>
+			</div>
+		</div>
+	</section> <!-- End of Main Nav -->
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts for this template -->
+	<!-- <script src="js/grayscale.min.js"></script> -->
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/main2.js"></script>
+	<script src="js/video.js"></script>
+	<script type="text/javascript">
+		//using document ready...
+		$(document).ready(function () {
+
+			//initialising fullpage.js in the jQuery way
+			$('#fullpage').fullpage({
+				sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
+				navigation: true,
+				slidesNavigation: true,
+			});
+
+			// calling fullpage.js methods using jQuery
+			$('#moveSectionUp').click(function (e) {
+				e.preventDefault();
+				$.fn.fullpage.moveSectionUp();
+			});
+
+			$('#moveSectionDown').click(function (e) {
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		#actions {
+			position: fixed;
+			top: 73px;
+			left: 30px;
+			z-index: 99999;
+		}
+
+		#actions a {
+			background: rgba(0, 0, 0, 0.8);
+			padding: 7px;
+			margin: 2px;
+			color: #ccc;
+			display: inline-block;
+		}
+
+		#actions a:hover {
+			color: #fff;
+			background: #81A140;
+		}
+	</style>
+
+</body>
+
+</html>

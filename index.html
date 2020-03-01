@@ -26,6 +26,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/fullpagecss.css" rel="stylesheet">
 	<link href="css/style2.css" rel="stylesheet">
+	<link href="css/video.css" rel="stylesheet">
 
 </head>
 
@@ -43,12 +44,23 @@
 		</div>
 	</header> <!-- End of Header -->
 	<div id="fullpage">
+		<div class="section video-bg">
+			<video autoplay muted loop id="myVideo">
+				<source src="assets/videos/video.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			  </video>
+			  <div style="position: absolute; left: 50px;
+			  top: 20%; text-align: left;">
+				<h3 id="subTitleTypeit" style="font-size: 36px; color: #bc930c; font-weight: bold; margin-bottom: 30px;"></h3> 
+				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
+			</div>
+		</div>
 		<div class="section home_bg home_bg_1">
-			<div class="intro">
+			<!-- <div class="intro">
 				<h1 style="font-size: 60px; margin-bottom: 32px; font-family: Arvo;">GALLERY</h1>
 				<p style="color: #fff; font-size: 18px; font-family: Noto Serif;">PREMIUM CUSTOM CARS,
 					YOU KNOW YOU WANNA LOOK</p>
-			</div>
+			</div> -->
 		</div>
 		<div class="section home_bg home_bg_2">
 			<!-- <h1>Caption</h1> -->
@@ -68,15 +80,15 @@
 				<nav id="main-nav">
 					<ul id="main-links">
 						<li>
-							<a href="gallery/index.html" target="">
+							<a href="video.html" target="_blank">
 								Gallery </a>
 						</li>
 						<li>
-							<a href="team/index.html" target="">
+							<a href="video2.html" target="_blank">
 								Team </a>
 						</li>
 						<li>
-							<a href="show/index.html" target="">
+							<a href="video3.html" target="_blank">
 								Bitchin’ Rides </a>
 						</li>
 						<li>
@@ -141,8 +153,11 @@
 	<!-- Custom scripts for this template -->
 	<!-- <script src="js/grayscale.min.js"></script> -->
 	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/main2.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/typeit.js"></script>
 	<script type="text/javascript">
 		//using document ready...
 		$(document).ready(function () {

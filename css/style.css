@@ -689,7 +689,7 @@ html {
     bottom: 0;
     left: 0;
     text-align: center;
-    z-index: 60;
+    z-index: 101;
     display: none;
     background: #000000 url("images/main-nav-background.png") no-repeat center center; }
     #main-nav-container ul a {
