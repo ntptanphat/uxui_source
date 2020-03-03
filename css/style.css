@@ -638,13 +638,14 @@ html {
     height: 94px; }
   
   #header-logo {
-    display: block;
+    /*display: block;
     position: absolute;
     left: 35px;
     top: 50%;
     width: 93px;
     height: 73px;
-    margin-top: -36px; }
+    margin-top: -36px; */
+  }
   
   #hamburger {
     display: block;
