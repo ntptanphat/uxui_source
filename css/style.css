@@ -1,4 +1,4 @@
-/*
+
 * = Helpers
 */
 html {
@@ -692,7 +692,8 @@ html {
     text-align: center;
     z-index: 101;
     display: none;
-    background: #000000 url("images/main-nav-background.png") no-repeat center center; }
+    /*background: #000000 url("images/main-nav-background.png") no-repeat center center; */
+    background: #000000 url("../assets/images/menu_bg.jpg") no-repeat center center; }
     #main-nav-container ul a {
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
@@ -3446,4 +3447,4 @@ html {
     h3 {
       page-break-after: avoid; } }
   
-  /*# sourceMappingURL=style.css.map */
+  /*# sourceMappingURL=style.css.map 
