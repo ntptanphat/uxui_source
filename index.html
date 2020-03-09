@@ -19,21 +19,56 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/fullpage/fullpage.css" />
 
 	<!-- Custom styles for this template -->
-	<link href="css/grayscale.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/fullpagecss.css" rel="stylesheet">
-	<link href="css/style2.css" rel="stylesheet">
-	<link href="css/video.css" rel="stylesheet">
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/grayscale.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/fullpagecss.css" rel="stylesheet">
+	<link href="assets/css/homepage.css" rel="stylesheet">
+	<link href="assets/css/video.css" rel="stylesheet">
+	<style>
+		#section2 img {
+			left: 130%;
+			position: relative;
+			transition: all 600ms ease;
+		}
 
+		#section2 p {
+			opacity: 0;
+			transition: all 600ms ease;
+		}
+
+		#section3 .intro {
+			left: -130%;
+			position: relative;
+			transition: all 600ms ease;
+		}
+
+		#section3 .intro {
+			left: -130%;
+			position: relative;
+			transition: all 600ms ease;
+		}
+
+		/**
+    * Here we fire the animation for section 3.
+    * As the fp-viewing class in the body changes on each section and slide.
+    */
+		body.fp-viewing-2 #section3 .intro {
+			left: 0%;
+		}
+	</style>
 </head>
 
 <body class="home page-template page-template-template-home page-template-template-home-php page page-id-1813 homepage">
 	<header id="header-container" style="background-color: transparent;">
 		<div id="header" class="clearfix">
-			<a href="index.html" id="header-logo" class="sprite hide-text">Kindig It</a>
+			<!-- <a href="index.html" id="header-logo" class="sprite hide-text">Kindig It</a> -->
+			<a href="index.html" id="header-logo" class="">
+				<img src="assets/images/logo.png" alt="logo" />
+			</a>
 			<h1 style="display: none;">
 				Home</h1>
 			<a href="#" id="hamburger">
@@ -45,28 +80,36 @@
 	</header> <!-- End of Header -->
 	<div id="fullpage">
 		<div class="section video-bg">
-			<video autoplay muted loop id="myVideo">
+			<video loop muted data-autoplay id="myVideo">
 				<source src="assets/videos/video.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
-			  </video>
-			  <div style="position: absolute; left: 50px;
+			</video>
+			<div style="position: absolute; left: 50px;
 			  top: 20%; text-align: left;">
-				<h3 id="subTitleTypeit" style="font-size: 36px; color: #bc930c; font-weight: bold; margin-bottom: 30px;"></h3> 
+				<h3 id="subTitleTypeit"
+					style="font-size: 36px; color: #bc930c; font-weight: bold; margin-bottom: 30px;"></h3>
 				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
 			</div>
 		</div>
-		<div class="section home_bg home_bg_1">
-			<!-- <div class="intro">
+		<!-- <div class="section home_bg home_bg_1">
+			<div class="intro">
 				<h1 style="font-size: 60px; margin-bottom: 32px; font-family: Arvo;">GALLERY</h1>
 				<p style="color: #fff; font-size: 18px; font-family: Noto Serif;">PREMIUM CUSTOM CARS,
 					YOU KNOW YOU WANNA LOOK</p>
-			</div> -->
-		</div>
-		<div class="section home_bg home_bg_2">
+			</div>
+		</div> -->
+		<div class="section home_bg home_bg_2" id="section2">
 			<!-- <h1>Caption</h1> -->
+			<div class="intro">
+				<h1>From the callbacks</h1>
+				<p>Animation fired through fullPage.js callbacks, making use of css3 transitions.</p>
+			</div>
 		</div>
-		<div class="section home_bg home_bg_3">
-			<!-- <h1>Caption</h1> -->
+		<div class="section home_bg home_bg_3" id="section3">
+			<div class="intro">
+				<h1>From the callbacks</h1>
+				<p>Animation fired through fullPage.js callbacks, making use of css3 transitions.</p>
+			</div>
 		</div>
 		<div class="section home_bg home_bg_4">
 			<!-- <h1>Caption</h1> -->
@@ -81,55 +124,39 @@
 					<ul id="main-links">
 						<li>
 							<a href="video.html" target="_blank">
-								Gallery </a>
+								AUTO </a>
 						</li>
 						<li>
-							<a href="video2.html" target="_blank">
-								Team </a>
+							<a href="accessories.html" target="_blank">
+								ACCESSORIES </a>
 						</li>
 						<li>
 							<a href="video3.html" target="_blank">
-								Bitchin’ Rides </a>
+								GALLERY </a>
 						</li>
 						<li>
 							<a href="kindigit-process/index.html" target="">
-								Process </a>
-						</li>
-						<li>
-							<a href="http://www.kindigitapparel.com/" target="_blank">
-								Store </a>
+								SERVICES </a>
 						</li>
 					</ul>
-					<!-- <ul id="sub-links">
-													<li>
+					<ul id="sub-links">
+						<li>
 							<a href="sale/index.html">
-								For Sale						        </a>
+								EVENT & NEWS </a>
 						</li>
-													<li>
+						<li>
 							<a href="calendar/index.html">
-								Calendar						        </a>
+								COMPANY </a>
 						</li>
-													<li>
+						<li>
 							<a href="dealers/index.html">
-								Dealers						        </a>
+								STORE </a>
 						</li>
-													<li>
+						<li>
 							<a href="partners/index.html">
-								Partners						        </a>
+								PRIVACY </a>
 						</li>
-													<li>
-							<a href="faq/index.html">
-								FAQS						        </a>
-						</li>
-													<li>
-							<a href="contact/index.html">
-								Contact Kindig-it Design						        </a>
-						</li>
-													<li>
-							<a href="privacy-policy/index.html">
-								Privacy Policy						        </a>
-						</li>
-												</ul> -->
+					</ul>
 					<nav class="social-media">
 						<a href="https://www.facebook.com/Kindig-it-Design-108367085644/" target="_blank"
 							class="facebook sprite hide-text"></a>
@@ -152,12 +179,13 @@
 
 	<!-- Custom scripts for this template -->
 	<!-- <script src="js/grayscale.min.js"></script> -->
-	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="assets/js/fullpage/fullpage.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/main2.js"></script>
-	<script src="js/video.js"></script>
-	<script src="js/typeit.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/main2.js"></script>
+	<script src="assets/js/video.js"></script>
+	<script src="assets/js/typeit.js"></script>
+	<script src="assets/js/fullpage.js"></script>
 	<script type="text/javascript">
 		//using document ready...
 		$(document).ready(function () {
@@ -166,7 +194,22 @@
 			$('#fullpage').fullpage({
 				sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
 				navigation: true,
+				nchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 				slidesNavigation: true,
+				afterLoad: function (origin, destination, direction) {
+					//section 2
+					if (destination.index == 1) {
+						document.querySelector('#section2').querySelector('p').style.opacity = 1;
+					}
+
+					//back to original state
+					else if (origin && origin.index == 1) {
+						document.querySelector('#section2').querySelector('p').style.opacity = 0;
+					}
+
+					//section 3 is using the state classes to fire the animation
+					//see the CSS code above!
+				}
 			});
 
 			// calling fullpage.js methods using jQuery
