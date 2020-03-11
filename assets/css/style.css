@@ -8,8 +8,8 @@
   /*
   * Global Styles
   */
-  html {
-    font-family: 'Oswald';
+  body {
+    font-family: 'Milano', Arial, sans-serif;
    }
   
   ul {
@@ -295,7 +295,7 @@
 .owl-carousel .item {
   height: 10rem;
   background: #4DC7A0;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .owl-carousel .item h4 {
@@ -344,7 +344,26 @@
   flex: 0 0 480px;
   max-width: 480px;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px 25px;
+}
+.accessories-item-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.accessories-item-title {
+  font-size: 56px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+.accessories-item-image img {
+  width: 100%;
+  /* height: 100%; */
 }
 .accessories-wrap {
   flex: 0 0 calc(100% - 480px);
@@ -357,12 +376,13 @@
 .accessories-main {
   height: calc(100vh - 200px);
   display: flex;
-  padding: 50px;
+  padding: 100px 70px;
 }
 
 .accessories-main-image {
   flex: 0 0 30%;
   max-width: 30%;
+  /* padding-top: 10px; */
 }
 .accessories-main-image img {
   width: 100%;
@@ -372,7 +392,37 @@
   flex: 0 0 70%;
   max-width: 70%;
   color: #FFF;
-  padding-left: 30px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 15px;
+}
+
+.accessories-main-content .accessories-main-content-title {
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.accessories-main-content .accessories-main-content-title::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc((1 - 1.2) * 0.5em);
+  /* margin-top: -1em; */
+}
+
+.accessories-bottom {
+  padding: 20px 60px;
+}
+
+.accessories-slide .item {
+  cursor: pointer;
+}
+
+.accessories-slide .item img {
+  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
 }
 
 .accessories-main-content-title {
@@ -410,7 +460,7 @@
 
 /* ---- static-banner ---- */
 
-.static-banner {
+/* .static-banner {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -418,5 +468,5 @@
   color: white;
   background: #A2C;
   font-size: 22px;
-  z-index: 2; /* above items */
-}
+  z-index: 2;
+} */

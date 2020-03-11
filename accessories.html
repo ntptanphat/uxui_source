@@ -21,16 +21,17 @@
 
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" /> -->
 
-	<!-- Custom styles for this template -->
-	<link href="assets/css/reset.css" rel="stylesheet">
-	<link href="assets/css/grayscale.min.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
-	<!-- <link href="assets/css/fullpagecss.css" rel="stylesheet"> -->
-	<link href="assets/css/homepage.css" rel="stylesheet">
-	<link href="assets/css/video.css" rel="stylesheet">
 	<!-- Owl Stylesheets -->
     <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/grayscale.min.css" rel="stylesheet">
+	<link href="assets/css/fonts.css" rel="stylesheet">
+	<!-- <link href="assets/css/fullpagecss.css" rel="stylesheet"> -->
+	<link href="assets/css/homepage.css" rel="stylesheet">
+	<link href="assets/css/video.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
 	<style>
 		
 	</style>
@@ -57,63 +58,45 @@
 			<div class="accessories-item">
 				<div class="accessories-item-left">
 					<div class="accessories-item-image">
-						<!-- <img src="assets/images/accessories/accessories_bg.jpg" alt="" /> -->
+						<img src="assets/images/accessories/accessories_item_main.png" alt="" />
 					</div>
 					<div class="accessories-item-title">
-						Steering wheel
+						Steeling wheel
 					</div>
 				</div>
 				<div class="accessories-wrap">
 					<div class="accessories-main">
 						<div class="accessories-main-image">
-							<img src="assets/images/accessories/accessories_item.jpg" alt="" />
+							<img id="accessoriesImageSrc" src="assets/images/accessories/accessories_item_1.jpg" alt="" />
 						</div>
 						<div class="accessories-main-content">
-							<div class="accessories-main-content-title">
-								Steering Wheel
+							<div id="accessoriesTitle" class="accessories-main-content-title">
+								RTX, Steel Rim
 							</div>
-							<div class="accessories-main-content-description">
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+							<div id="accessoriesDescription" class="accessories-main-content-description">
+								PLEASE READ ENTIRE LISTING - Rim / Wheel size: 16X6.5 Bolt Pattern: 5X114.3 Center Bore: 71.5
 							</div>
 						</div>
 					</div>
-					<div class="accessories-slide">
-						<div class="owl-carousel owl-theme">
-							<div class="item">
-							  <h4>1</h4>
+					<div class="accessories-bottom">
+						<div class="accessories-slide owl-carousel owl-theme">
+							<div class="item" data-id="1">
+								<img src="assets/images/accessories/accessories_item_1.jpg" alt="" />
 							</div>
-							<div class="item">
-							  <h4>2</h4>
+							<div class="item" data-id="2">
+							  <img src="assets/images/accessories/accessories_item_2.jpg" alt="" />
 							</div>
-							<div class="item">
-							  <h4>3</h4>
+							<div class="item" data-id="3">
+							  <img src="assets/images/accessories/accessories_item_3.jpg" alt="" />
 							</div>
-							<div class="item">
-							  <h4>4</h4>
+							<div class="item" data-id="4">
+							  <img src="assets/images/accessories/accessories_item_4.jpg" alt="" />
 							</div>
-							<div class="item">
-							  <h4>5</h4>
+							<div class="item" data-id="5">
+							  <img src="assets/images/accessories/accessories_item_5.jpg" alt="" />
 							</div>
-							<div class="item">
-							  <h4>6</h4>
-							</div>
-							<div class="item">
-							  <h4>7</h4>
-							</div>
-							<div class="item">
-							  <h4>8</h4>
-							</div>
-							<div class="item">
-							  <h4>9</h4>
-							</div>
-							<div class="item">
-							  <h4>10</h4>
-							</div>
-							<div class="item">
-							  <h4>11</h4>
-							</div>
-							<div class="item">
-							  <h4>12</h4>
+							<div class="item" data-id="6">
+							  <img src="assets/images/accessories/accessories_item_6.jpg" alt="" />
 							</div>
 						  </div>
 					</div>
@@ -205,7 +188,7 @@
               owl.owlCarousel({
                 margin: 10,
                 nav: true,
-                loop: true,
+                loop: false,
 				dots: false,
                 responsive: {
                   0: {
@@ -215,7 +198,7 @@
                     items: 3
                   },
                   1000: {
-                    items: 5
+                    items: 4
                   }
                 }
               })
