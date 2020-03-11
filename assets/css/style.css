@@ -376,7 +376,7 @@
 .accessories-main {
   height: calc(100vh - 200px);
   display: flex;
-  padding: 100px 70px;
+  padding: 80px 70px;
 }
 
 .accessories-main-image {
@@ -426,7 +426,7 @@
 }
 
 .accessories-main-content-title {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .auto img {
