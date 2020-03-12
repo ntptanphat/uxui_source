@@ -6,14 +6,18 @@
 		windowHeight;
 
 	// Main Nav
-	$mainNavContainer = $('#main-nav-container');
+	let $mainNavContainer = $('#main-nav-container');
 	$('#header').on('click', '#hamburger', function(event) {
 		event.preventDefault();
 		
 		$mainNavContainer.fadeIn(function() {
 			$(this).addClass('open');			
 			if ($('.homepage').length > 0) {
-				$.fn.fullpage.setAllowScrolling(false);
+				if (typeof fullpage !== "undefined") {
+					console.log("fullpage exiting");
+					
+					$.fn.fullpage.setAllowScrolling(false);
+				}
 			}
 		});
 	});
@@ -26,7 +30,9 @@
 		$mainNavContainer.removeClass('open').fadeOut();
 
 		if ($('.homepage').length > 0) {
-			$.fn.fullpage.setAllowScrolling(true);
+			if (typeof fullpage !== "undefined") {
+				$.fn.fullpage.setAllowScrolling(true);
+			}
 		}
 	});
 
