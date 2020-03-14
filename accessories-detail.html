@@ -54,55 +54,51 @@
 		</div>
 	</header> <!-- End of Header -->
 	<main>
-		<section class="accessories-bg">
-			<div class="accessories-dashboard">
-				<div class="container-fluid">
-					<div class="row accessories-wrap">
-						<div class="col-md-3">
-							<a href="/accessories-detail.html">
-								<div class="accessories-item">
-									<div class="accessories-item-image">
-										<img src="assets/images/accessories/accessories_item_main.png" alt="" />
-									</div>
-									<div class="accessories-item-title">
-										Steering wheel
-									</div>
-								</div>
-							</a>
+		<section class="accessoriesdetail-bg">
+			<div class="accessoriesdetail-item">
+				<div class="accessoriesdetail-item-left">
+					<div class="accessoriesdetail-item-image">
+						<img src="assets/images/accessories/accessories_item_main.png" alt="" />
+					</div>
+					<div class="accessoriesdetail-item-title">
+						Steeling wheel
+					</div>
+				</div>
+				<div class="accessoriesdetail-wrap">
+					<div class="accessoriesdetail-main">
+						<div class="accessoriesdetail-main-image">
+							<img id="accessoriesImageSrc" src="assets/images/accessories/accessories_item_1.jpg" alt="" />
 						</div>
-						<div class="col-md-3">
-							<a href="accessories-detail.html">
-							<div class="accessories-item">
-								<div class="accessories-item-image">
-									<img src="assets/images/accessories/accessories_item_main.png" alt="" />
-								</div>
-								<div class="accessories-item-title">
-									Wheel
-								</div>
-							</div></a>
+						<div class="accessoriesdetail-main-content">
+							<div id="accessoriesTitle" class="accessoriesdetail-main-content-title">
+								RTX, Steel Rim
+							</div>
+							<div id="accessoriesDescription" class="accessoriesdetail-main-content-description">
+								PLEASE READ ENTIRE LISTING - Rim / Wheel size: 16X6.5 Bolt Pattern: 5X114.3 Center Bore: 71.5
+							</div>
 						</div>
-						<div class="col-md-3">
-							<a href="accessories-detail.html">
-							<div class="accessories-item">
-								<div class="accessories-item-image">
-									<img src="assets/images/accessories/accessories_item_main.png" alt="" />
-								</div>
-								<div class="accessories-item-title">
-									Lights
-								</div>
-							</div></a>
-						</div>
-						<div class="col-md-3">
-							<a href="accessories-detail.html">
-							<div class="accessories-item">
-								<div class="accessories-item-image">
-									<img src="assets/images/accessories/accessories_item_main.png" alt="" />
-								</div>
-								<div class="accessories-item-title">
-									Seat
-								</div>
-							</div></a>
-						</div>
+					</div>
+					<div class="accessoriesdetail-bottom">
+						<div class="accessoriesdetail-slide owl-carousel owl-theme">
+							<div class="item" data-id="1">
+								<img src="assets/images/accessories/accessories_item_1.jpg" alt="" />
+							</div>
+							<div class="item" data-id="2">
+							  <img src="assets/images/accessories/accessories_item_2.jpg" alt="" />
+							</div>
+							<div class="item" data-id="3">
+							  <img src="assets/images/accessories/accessories_item_3.jpg" alt="" />
+							</div>
+							<div class="item" data-id="4">
+							  <img src="assets/images/accessories/accessories_item_4.jpg" alt="" />
+							</div>
+							<div class="item" data-id="5">
+							  <img src="assets/images/accessories/accessories_item_5.jpg" alt="" />
+							</div>
+							<div class="item" data-id="6">
+							  <img src="assets/images/accessories/accessories_item_6.jpg" alt="" />
+							</div>
+						  </div>
 					</div>
 				</div>
 			</div>
@@ -190,15 +186,31 @@
 	<!-- <script type="text/javascript" src="assets/js/fullpage.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
 	<script src="assets/js/main2.js"></script>
-	<script src="assets/js/video.js"></script>
-	<script src="assets/js/typeit.js"></script>
+	<script src="assets/js/accessoriesdetail.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 	<!-- <script src="assets/js/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
 	<script src="assets/js/owlcarousel/owl.carousel.js"></script>
 	<script type="text/javascript">
 		  $(document).on('ready', function() {	  
 	
-			
+			var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: false,
+				dots: false,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 4
+                  }
+                }
+              })
 	
 		});
 	
