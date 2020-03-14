@@ -411,9 +411,14 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 50px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.accessoriesdetail-item-leftcontent {
 }
 .accessoriesdetail-item-image {
-  width: 60%;
+  width: 32%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,7 +426,7 @@
   margin-right: auto;
 }
 .accessoriesdetail-item-title {
-  font-size: 56px;
+  font-size: 48px;
   color: #FFF;
   font-weight: bold;
   text-align: center;
@@ -433,8 +438,6 @@
   flex: 0 0 calc(100% - 480px);
   max-width: calc(100% - 480px);
   background-color: transparent;
-  /* display: flex;
-  align-items: flex-end; */
 }
 
 .accessoriesdetail-main {
