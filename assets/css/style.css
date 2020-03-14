@@ -446,10 +446,10 @@
 .accessoriesdetail-main-image {
   flex: 0 0 30%;
   max-width: 30%;
-  /* padding-top: 10px; */
 }
 .accessoriesdetail-main-image img {
   width: 100%;
+  border: 3px solid #052c3b;
 }
 
 .accessoriesdetail-main-content {
@@ -481,6 +481,7 @@
 
 .accessoriesdetail-slide .item {
   cursor: pointer;
+  border: 3px solid #052c3b;
 }
 
 .accessoriesdetail-slide .item img {
