@@ -24,9 +24,3 @@
     background-image: url('../images/home/homepage-background-4.jpg');
 }
 
-@media (max-width: 1440px) {
-    #main-nav-container.open ul a {
-        font-size: 32px;
-        line-height: 1.75em;
-    }
-  }

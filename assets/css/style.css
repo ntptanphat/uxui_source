@@ -11,7 +11,12 @@
   body {
     font-family: 'Milano', Arial, sans-serif;
    }
-  
+  .full-height {
+    height: 100vh;
+  }
+  .max-height {
+    height: 100%;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -119,8 +124,12 @@
     left: 0;
     width: 100%;
     z-index: 30;
-    background: #000000;
-    text-align: center; }
+    text-align: center; 
+    background-color: transparent;
+    transition: all 200ms ease-in;}
+    
+  #header-container.is-background{
+    background-color: black; }
     #header-container h1 {
       font-size: 36px;
       font-size: 2.25rem;
@@ -133,7 +142,6 @@
   #header {
     position: relative;
     height: 94px; }
-  
   #header-logo {
     display: block;
     position: absolute;
@@ -243,6 +251,16 @@
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 40px; }
+    @media (max-width: 1440px) {
+      #main-nav-container.open .main-links ul a {
+          font-size: 32px;
+          line-height: 1.75em;
+      }
+    }
+
+    #main-links li.has-submenu {
+      padding-left: 18px;
+    }
     #main-links:after {
       content: '';
       display: block;
@@ -257,10 +275,57 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+      #main-links .expand {
+       position: relative;
+       bottom: 12px;
+       left: -8px;
+       opacity: 0;
+       -webkit-transition: opacity 0.4s ease-in-out 0.05s;
+      -moz-transition: opacity 0.4s ease-in-out 0.05s;
+      -ms-transition: opacity 0.4s ease-in-out 0.05s;
+      -o-transition: opacity 0.4s ease-in-out 0.05s;
+      transition: opacity 0.4s ease-in-out 0.05s;
+      }
+      #main-nav-container.open #main-links .expand{
+        opacity: 1;
+      }
+    #main-links .expand::after {
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      width: 22px;
+      height: 12px;
+      background-image: url('../images/icons/chevron-up.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #main-links .expand.expanded::after {
+      background-image: url('../images/icons/chevron-down.png');
+    }
+    #main-links .expand.expanded + .sub-main-links {
+      display: block;
+    }
     #main-links a {
       font-size: 50px;
       font-size: 3.125rem; }
-  
+      #main-links .sub-main-links {
+    /* padding-left: 0px; */
+    display: none;
+    transition: all 500ms ease-in-out;
+  }
+  #main-links .expand.expanded + .sub-main-links {
+    display: block;
+  }
+  #main-links .sub-main-links a {
+   font-size: 32px;
+   font-weight: 300;
+  }
+  @media (max-width: 1440px) {
+    #main-links .sub-main-links a {
+        font-size: 26px;
+    }
+  }
   #sub-links {
     margin-bottom: 40px; }
     #sub-links a {
@@ -477,9 +542,58 @@
 
 .auto-carousel .item {
   height: 100vh;
+  width: 100vw;
 }
 
 .auto-carousel .item img {
   height: 100%;
   object-fit: cover;
+}
+
+.auto-carousel.owl-carousel .owl-nav button.owl-prev,
+.auto-carousel.owl-carousel .owl-nav button.owl-next  {
+  top: 50%;
+}
+.auto-carousel .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+}
+
+/* Auto detail */
+.autoDetail-topcontent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.autoDetail-gallery .gallery-item {
+  overflow: hidden;
+  cursor: crosshair;
+}
+.autoDetail-gallery .gallery-item img {
+  transition: all ease-out 300ms;
+}
+.autoDetail-gallery .gallery-item:hover img {
+  transform: scale(1.26);
+}
+.autoDetail-gallery .gallery-item img {
+  width: 100%;
+  height: 50vh;
+}
+
+.scrollup {
+  position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 1.3;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    background-color: black;
+    display: none;
 }

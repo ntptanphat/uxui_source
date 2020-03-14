@@ -13,9 +13,7 @@
 		$mainNavContainer.fadeIn(function() {
 			$(this).addClass('open');			
 			if ($('.homepage').length > 0) {
-				if (typeof fullpage !== "undefined") {
-					console.log("fullpage exiting");
-					
+				if (typeof fullpage !== "undefined") {					
 					$.fn.fullpage.setAllowScrolling(false);
 				}
 			}
@@ -24,7 +22,12 @@
 
 	$mainNavContainer.on('click', function(event) {
 		if($(event.target).is('a:not(".close-button")')) return;
-
+		console.log(event.target);
+		
+		if($(event.target).is('.expand')) {
+			$(event.target).toggleClass("expanded");
+			return;
+		};
 		event.preventDefault();
 
 		$mainNavContainer.removeClass('open').fadeOut();
@@ -34,6 +37,39 @@
 				$.fn.fullpage.setAllowScrolling(true);
 			}
 		}
+	});
+	var lastScroll = 0;
+	const $header = $('header');
+	window.onscroll = function() {
+		let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
+		if (currentScroll > 100 && lastScroll <= currentScroll){
+			lastScroll = currentScroll;
+			if(!$header.hasClass('no-animation') && !$header.hasClass('is-background')) {
+				$header.addClass("is-background");  
+			}
+		}else{
+			lastScroll = currentScroll;
+			if(!$header.hasClass('no-animation') && $header.hasClass('is-background')) {
+				$header.removeClass("is-background");  
+			}
+		}
+	};
+	// scroll function for changed css starts
+	const $scrollup = $('.scrollup');
+	$(window).on('scroll', function() {
+		// back to top
+		if ($(this).scrollTop() > 200) {
+			$scrollup.fadeIn();
+		} else {
+			$scrollup.fadeOut();
+		}
+	});
+	$scrollup.on("click", function() {
+		$('html').animate({
+			scrollTop: 0
+		}, 600);
+		return false;
 	});
 
 })(this.jQuery);
