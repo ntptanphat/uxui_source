@@ -6,9 +6,13 @@
     top: 10%;
 }
 .home_bg {
-   background-position: center top;
+   background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+#fp-nav ul li:last-of-type {
+    visibility: hidden;
 }
 
 .home_bg_1 {

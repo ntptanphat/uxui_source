@@ -91,7 +91,7 @@
 				<h3 id="subTitleTypeit"
 					style="font-size: 36px; color: #ed472e; font-weight: bold; margin-bottom: 20px;"></h3>
 				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
-			</div> -->
+			</div>
 			 <!-- <div style="position: absolute; left: 50px;
 			  top: 50%; text-align: left; width: 820px">
 				<img src="assets/images/new-logan.png" alt="logan" style="width: 100%" />
@@ -118,7 +118,31 @@
 				<p>Performance enthusiasts demand more out of their cars. We get it at 76 Customs. When it comes to redefining the classics, there's a lot of aftermarket and performance parts at your fingers.</p>
 			</div>
 		</div>
+		<div class="section fp-auto-height">
+			<!-- footer-->
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">						
+						<div class="text-left">
+							©2020 Car Custom Design. All Rights Reserved.
+						</div>	
+					</div>
+					<div class="col-md-6">	
+						<div class="social-media float-right">
+							<i class="fab fa-facebook-f"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-instagram"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		</div>
 	</div>
+	
 	<!-- ***************************************** --> }
 	<section id="main-nav-container">
 		<a href="#" class="close-button"></a>
@@ -184,27 +208,7 @@
 			</div>
 		</div>
 	</section> <!-- End of Main Nav -->
-	<!-- footer-->
-	<footer class="footer">
-		<div class="footer-container">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">						
-						<div class="text-left">
-							©2020 Car Custom Design. All Rights Reserved.
-						</div>	
-					</div>
-					<div class="col-md-6">	
-						<div class="social-media float-right">
-							<i class="fab fa-facebook-f"></i>
-							<i class="fab fa-twitter"></i>
-							<i class="fab fa-instagram"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
@@ -228,9 +232,8 @@
 
 			//initialising fullpage.js in the jQuery way
 			$('#fullpage').fullpage({
-				sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
 				navigation: true,
-				nchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				dots: true,
 				slidesNavigation: true,
 				afterLoad: function (origin, destination, direction) {
 					//section 2
@@ -245,6 +248,12 @@
 
 					//section 3 is using the state classes to fire the animation
 					//see the CSS code above!
+				},
+				onLeave: function(origin, destination, direction){
+					if(destination.index === 2 && direction === 'up') {
+						console.log('scroll to index 2');
+						// $.fn.fullpage.moveTo(1);
+					}
 				}
 			});
 
