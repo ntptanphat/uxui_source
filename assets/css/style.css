@@ -48,7 +48,6 @@ ul {
     display: none;
 }
 
-
 /* Close Button */
 
 .close-button {
@@ -964,4 +963,23 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footer {
+    padding: 30px 40px 24px;
+    background-color: #000;
+}
+
+.social-media i {
+    color: #686868;
+    font-size: 24px;
+}
+
+.social-media i:hover {
+    color: #FA1205;
+    cursor: pointer;
+}
+
+.social-media i:not(:last-of-type) {
+    margin-right: 15px;
 }
