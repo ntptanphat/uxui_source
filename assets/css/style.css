@@ -509,7 +509,7 @@ footer {
 }
 
 .owl-carousel .owl-nav button.owl-next {
-    background-image: url('assets/images/icons/arrow-right.png');
+    background-image: url('../images/icons/arrow-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -518,7 +518,7 @@ footer {
 }
 
 .owl-carousel .owl-nav button.owl-next {
-    background-image: url('assets/images/icons/arrow-right.png');
+    background-image: url('../images/icons/arrow-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -527,7 +527,7 @@ footer {
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    background-image: url('assets/images/icons/arrow-right.png');
+    background-image: url('../images/icons/arrow-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -968,6 +968,7 @@ footer {
 .footer {
     padding: 30px 40px 24px;
     background-color: #000;
+    color: #686868;
 }
 
 .social-media i {
