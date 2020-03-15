@@ -429,7 +429,8 @@ html {
     height: auto; }
   
   .sprite {
-    background: url("images/sprite.png") no-repeat 0 0; }
+    /* background: url("images/sprite.png") no-repeat 0 0;  */
+  }
   
   .show-on-mobile,
   .show-on-phone {

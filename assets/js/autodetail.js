@@ -65,8 +65,6 @@ function resize() {
   });
   
   // Resize Container on window resize
-  $(window).resize(function(){
-    
-    resize();
-    
+  $(window).resize(function(){    
+    resize();    
   });
