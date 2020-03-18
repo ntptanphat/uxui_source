@@ -924,18 +924,48 @@ footer {
     position: absolute;
 }
 
-.detail.box-1 {
+.auto-detail-1 .detail.box-1 {
     top: 70%;
     left: 60%;
 }
 
-.detail.box-2 {
+.auto-detail-1 .detail.box-2 {
     top: 42%;
     left: 42%;
 }
 
-.detail.box-3 {
+.auto-detail-1 .detail.box-3 {
     top: 36%;
+    left: 76%;
+}
+
+.auto-detail-2 .detail.box-1 {
+    top: 33%;
+    left: 51%;
+}
+
+.auto-detail-2 .detail.box-2 {
+    top: 48%;
+    left: 30%;
+}
+
+.auto-detail-2 .detail.box-3 {
+    top: 56%;
+    left: 71%;
+}
+
+.auto-detail-3 .detail.box-1 {
+    top: 11%;
+    left: 62%;
+}
+
+.auto-detail-3 .detail.box-2 {
+    top: 28%;
+    left: 37%;
+}
+
+.auto-detail-3 .detail.box-3 {
+    top: 41%;
     left: 76%;
 }
 
