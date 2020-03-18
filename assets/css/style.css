@@ -925,18 +925,18 @@ footer {
 }
 
 .detail.box-1 {
-  top: 50%;
-  left: 57%;
+    top: 70%;
+    left: 60%;
 }
 
 .detail.box-2 {
-  top: 42%;
-  left: 32%;
+    top: 42%;
+    left: 42%;
 }
 
 .detail.box-3 {
-  top: 47%;
-  left: 78%;
+    top: 36%;
+    left: 76%;
 }
 
 @media screen and (max-width: 720px) {
