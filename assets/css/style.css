@@ -600,7 +600,7 @@ footer {
 /* /OwlCarousel */
 
 .accessoriesdetail-bg {
-    background-image: url('../images/accessories/accessories_bg.jpg');
+    /* background-image: url('../images/accessories/accessories_bg.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -661,9 +661,15 @@ footer {
     max-width: 30%;
 }
 
+.accessoriesdetail-main-image-wrap {
+    height: 200px;
+    border: 3px solid transparent;
+}
+
 .accessoriesdetail-main-image img {
     width: 100%;
-    border: 3px solid #052c3b;
+    height: 100%;
+    object-fit: cover;
 }
 
 .accessoriesdetail-main-content {
@@ -696,8 +702,26 @@ footer {
 
 .accessoriesdetail-slide .item {
     cursor: pointer;
-    border: 3px solid #052c3b;
+    border: 3px solid transparent;
 }
+
+.accessoriesdetail-lights .accessoriesdetail-slide .item, 
+.accessoriesdetail-lights .accessoriesdetail-main-image-wrap {
+    border-color: #aa0000;
+}
+.accessoriesdetail-steeringwheel .accessoriesdetail-slide .item,
+.accessoriesdetail-steeringwheel .accessoriesdetail-main-image-wrap {
+    border-color: #3da09d;
+}
+.accessoriesdetail-seat .accessoriesdetail-slide .item,
+.accessoriesdetail-seat .accessoriesdetail-main-image-wrap {
+    border-color: #8b3b3a;
+}
+.accessoriesdetail-wheel .accessoriesdetail-slide .item,
+.accessoriesdetail-wheel .accessoriesdetail-main-image-wrap {
+    border-color: #052c3b;
+}
+
 
 .accessoriesdetail-slide .item img {
     cursor: pointer;
