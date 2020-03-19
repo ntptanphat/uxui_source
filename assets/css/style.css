@@ -619,7 +619,8 @@ footer {
     padding: 50px 25px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    position: relative;
 }
 
 @media (max-width: 1440px) {    
@@ -668,6 +669,21 @@ footer {
     height: calc(100vh - 280px);
     display: flex;
     padding: 80px 70px;
+}
+.accessoriesdetail-back-to {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    background: url('../images/icons/arrow-left.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.66;
+    cursor: pointer;
+}
+
+.accessoriesdetail-back-to:hover {
+    opacity: 1;
 }
 
 @media (min-width: 1366px) {    
