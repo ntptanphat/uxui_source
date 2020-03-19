@@ -527,6 +527,28 @@ footer {
 /*
   * OwlCarousel
   */
+.accessories-wrap .accessories-item-wrap {
+    color: red;
+    position: relative;
+    cursor: pointer;
+}
+
+.accessories-wrap .accessories-item-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.45s ease-in-out 0.15s;
+    width: 100%;
+    height: 100%;
+}
+
+.accessories-wrap .accessories-item-wrap:hover::before {
+    transform: translateY(100%);
+}
 
 .owl-carousel .item {
     height: 10rem;
@@ -790,6 +812,12 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
+}
+
+.accessories-dashboard .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .accessories {}
