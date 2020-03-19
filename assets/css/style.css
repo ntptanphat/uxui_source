@@ -261,6 +261,15 @@ ul {
     margin-top: -36px;
 }
 
+@media (min-width: 1366px) {    
+    #header-logo {
+        width: 93px;
+        height: 73px;
+        left: 42px;
+        top: 68%;
+    }
+}
+
 #header-logo img {
     width: 100%;
 }
