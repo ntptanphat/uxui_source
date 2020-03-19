@@ -907,16 +907,16 @@ footer {
 /* ---- static-banner ---- */
 
 
-/* .static-banner {
+.static-banner {
   position: absolute;
   left: 10px;
   top: 10px;
   padding: 10px 30px;
   color: white;
-  background: #A2C;
+  /* background: #A2C; */
   font-size: 22px;
   z-index: 2;
-} */
+}
 
 .auto-carousel .owl-stage-outer {
     /*height: 100vh;*/
