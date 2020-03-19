@@ -622,6 +622,13 @@ footer {
     align-items: center
 }
 
+@media (max-width: 1440px) {    
+    .accessoriesdetail-item-left {
+        flex: 0 0 360px;
+        max-width: 360px;
+    }
+}
+
 .accessoriesdetail-item-leftcontent {}
 
 .accessoriesdetail-item-image {
@@ -648,6 +655,13 @@ footer {
     flex: 0 0 calc(100% - 480px);
     max-width: calc(100% - 480px);
     background-color: transparent;
+}
+
+@media (max-width: 1440px) {    
+    .accessoriesdetail-wrap {
+        flex: 0 0 calc(100% - 360px);
+        max-width: calc(100% - 360px);
+    }
 }
 
 .accessoriesdetail-main {
@@ -712,7 +726,7 @@ footer {
     height: 240px;
 }
 
-@media (min-width: 1366px) {    
+@media (max-width: 1366px) {    
     .accessoriesdetail-slide .item {
         height: 160px;
     }
