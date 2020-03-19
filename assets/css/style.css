@@ -907,6 +907,9 @@ footer {
 .auto-carousel.owl-carousel .owl-nav button.owl-prev,
 .auto-carousel.owl-carousel .owl-nav button.owl-next {
     top: 50%;
+    position: absolute;
+    width: 36px;
+    height: 56px;
 }
 
 .auto-carousel .owl-dots {
@@ -918,14 +921,22 @@ footer {
 }
 
 .auto-pagecontent .auto-carousel .owl-dots {
-    bottom: 36px;
+    bottom: 10px;
 }
-.auto-pagecontent .auto-carousel .owl-nav .owl-prev {
-    bottom: 36px;
+.auto-pagecontent .auto-carousel .owl-nav .owl-prev {    
+    left: 15px;
+    background-image: url('../images/icons/chevron-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
-.auto-pagecontent .auto-carousel .owl-nav .owl-next {
-    bottom: 36px;
+.auto-pagecontent .auto-carousel .owl-nav .owl-next {    
+    right: 15px;
+    background-image: url('../images/icons/chevron-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 
