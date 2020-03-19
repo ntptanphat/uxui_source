@@ -1135,3 +1135,139 @@ footer {
 .social-media i:not(:last-of-type) {
     margin-right: 15px;
 }
+
+/* Button */
+
+.btn {
+    border: 2px solid;
+    color: #FA1205;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Milano" sans-serif;
+    padding: 12px 20px;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1440px) {    
+    .btn {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 14px;
+    }
+}
+
+@media (max-width: 768px) {    
+    .btn {
+        padding: 8px 12px;
+    }
+}
+
+.btn::before {
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease-in;
+    background-color: #FA1205;    
+    z-index: -1;
+}
+.btn:hover {
+   color: #fff;
+   background-color: transparent;
+   border-color: #FA1205;
+   box-shadow: none;
+}
+.btn.btn-primary:hover::before {
+    width: 100%;
+}
+.btn-primary {
+    background-color: transparent;
+    border-color: #FA1205;
+}
+
+.btn-small {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 16px;
+}
+
+@media (max-width: 1440px) {    
+    .btn.btn-small {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@keyframes titleOpacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+@keyframes widthMinToMax {
+    from {width: 0; opacity: 0;}
+    to {width: 100%; opacity: 1;}
+}
+
+.home-banner-subtitle {
+    font-size: 36px; 
+    color: #ed472e; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    opacity: 0;
+    word-break: break-all;
+    animation: titleOpacity 0.7s forwards ease-in-out 2s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 1440px) {    
+    .home-banner-subtitle {
+        font-size: 28px; 
+    }
+}
+
+@media (max-width: 768px) {    
+    .home-banner-subtitle {
+        font-size: 18px; 
+    }
+}
+
+.home-banner-title {
+    font-size: 50px; 
+    color: white; 
+    font-weight: bold; 
+    opacity: 0;
+    min-width: 100%;   
+    animation: widthMinToMax 3s forwards ease-in-out 2.8s;
+    animation-iteration-count: 1;
+}
+
+@media (min-width: 13660px) {    
+    .home-banner-title {
+        min-width: max-content;
+    }
+}
+
+@media (max-width: 1440px) {    
+    .home-banner-title {
+        font-size: 36px; 
+    }
+}
+
+@media (max-width: 768px) {    
+    .home-banner-title {
+        font-size: 26px; 
+    }
+}
+
+.home-banner-button {   
+    opacity: 0;
+    animation: titleOpacity 0.5s forwards ease-in-out 3.7s;
+    animation-iteration-count: 1;
+}
