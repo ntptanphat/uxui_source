@@ -13,7 +13,7 @@
   */
 
   body {
-    font-family: 'Milano', Arial, sans-serif;
+    font-family: "Milano", sans-serif;
 }
 
 .full-height {
@@ -340,11 +340,12 @@ ul {
 }
 
 #main-nav-container ul a {
-    font-family: "Oswald", sans-serif;
+    font-family: "Milano", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
     opacity: 0;
+    letter-spacing: 0.17em;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -437,7 +438,7 @@ ul {
     position: relative;
     bottom: 12px;
     left: -8px;
-    opacity: 0;
+    /* opacity: 0; */
     -webkit-transition: opacity 0.4s ease-in-out 0.05s;
     -moz-transition: opacity 0.4s ease-in-out 0.05s;
     -ms-transition: opacity 0.4s ease-in-out 0.05s;
@@ -449,7 +450,7 @@ ul {
     opacity: 1;
 }
 
-#main-links .expand::after {
+/* #main-links .expand::after {
     content: '';
     cursor: pointer;
     display: inline-block;
@@ -463,7 +464,7 @@ ul {
 
 #main-links .expand.expanded::after {
     background-image: url('../images/icons/chevron-down.png');
-}
+} */
 
 #main-links .expand.expanded + .sub-main-links {
     display: block;
@@ -476,7 +477,7 @@ ul {
 
 #main-links .sub-main-links {
     /* padding-left: 0px; */
-    display: none;
+    /* display: none; */
     transition: all 500ms ease-in-out;
 }
 
@@ -1171,8 +1172,8 @@ footer {
 }
 
 .detail-box h5 {
-    font-size: 25px;
-    font-size: 1.5625rem;
+    font-size: 26px;
+    line-height: 36px;
     text-transform: uppercase;
 }
 

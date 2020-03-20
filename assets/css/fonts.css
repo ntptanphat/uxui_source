@@ -1,27 +1,62 @@
 @font-face {
 	font-family: "Milano";
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano.eot");
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano.otf") format("opentype");
+	src: url("fonts/MTTMilano-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Milano";
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano Bold.eot");
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano Bold.otf") format("opentype");
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: "Milano";
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano BoldItalic.eot");
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano BoldItalic.otf") format("opentype");
-	font-weight: bold;
+	src: url("fonts/MTTMilano-RegularItalic.ttf");
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Milano";
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano UltraBold.eot");
-	src: url("fonts/MTT Milano Family/Type Firm - MTT Milano UltraBold.otf") format("opentype");
+	src: url("fonts/MTTMilano-Black.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-BlackItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-Medium.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-MediumItalic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-Bold.ttf");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-UltraBold.ttf");
 	font-weight: 900;
+}
+
+@font-face {
+	font-family: "Milano";
+	src: url("fonts/MTTMilano-UltraBoldItalic.ttf");
+	font-weight: 900;
+	font-style: italic;
 }

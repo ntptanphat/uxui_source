@@ -22,10 +22,10 @@
 
 	$mainNavContainer.on('click', function(event) {
 		if($(event.target).is('a:not(".close-button")')) return;		
-		if($(event.target).is('.expand')) {
-			$(event.target).toggleClass("expanded");
-			return;
-		};
+		// if($(event.target).is('.expand')) {
+		// 	$(event.target).toggleClass("expanded");
+		// 	return;
+		// };
 		event.preventDefault();
 
 		$mainNavContainer.removeClass('open').fadeOut();
