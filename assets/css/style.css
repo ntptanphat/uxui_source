@@ -233,6 +233,9 @@ ul {
 #header-container.is-background {
     background-color: black;
 }
+#header-container.header-dark {
+    background-color: black;
+}
 
 #header-container h1 {
     font-size: 36px;
@@ -1373,4 +1376,62 @@ footer {
     opacity: 0;
     animation: titleOpacity 0.5s forwards ease-in-out 3.7s;
     animation-iteration-count: 1;
+}
+
+/*  Gallery */
+
+main.gallery {
+    position: relative;
+}
+.gallery .gallery-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.2em;
+}
+
+.gallery .gallery-title:hover {    
+    color: #FA1205;
+}
+.gallery .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.97);
+    padding: 20px 35px;
+    padding-top: 10px;
+    border-bottom: 2px solid #383838;
+    z-index: 2;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+.gallery .gallery-navigation.is-show {
+    opacity: 1;
+}
+.gallery .gallery-navigation:hover {
+    background-color: #000;
+}
+
+.gallery .gallery-navigation .gallery-navigation-left {
+    background: url('../images/icons/chevron-left.png') no-repeat center;
+}
+.gallery .gallery-navigation .gallery-navigation-right {
+    background: url('../images/icons/chevron-right.png') no-repeat center;    
+}
+.gallery .gallery-navigation .gallery-navigation-left,
+.gallery .gallery-navigation .gallery-navigation-right {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.066;
+    transition: all 0.68s ease;
+}
+.gallery .gallery-navigation:hover .gallery-navigation-left,
+.gallery .gallery-navigation:hover .gallery-navigation-right {
+    opacity: 1;
 }
