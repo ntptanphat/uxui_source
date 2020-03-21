@@ -163,7 +163,6 @@ ul {
 /* Social Media */
 
 .social-media {
-    text-align: center;
 }
 
 .social-media a {
@@ -371,7 +370,8 @@ ul {
     z-index: 10;
 }
 
-#main-nav-container.open #main-links:after {
+#main-nav-container.open #main-links:after,
+#main-nav-container.open #sub-links:after {
     left: 0;
     width: 100%;
 }
@@ -399,7 +399,7 @@ ul {
 }
 
 #main-nav {
-    width: 450px;
+    width: 320px;
     margin: 0 auto;
 }
 
@@ -424,7 +424,8 @@ ul {
     padding-left: 0;
 }
 
-#main-links:after {
+#main-links:after,
+#sub-links:after {
     content: '';
     display: block;
     position: absolute;
@@ -484,6 +485,7 @@ ul {
 #main-links .sub-main-links {
     padding-left: 60px;
     transition: all 500ms ease-in-out;
+    padding-top: 6px;
 }
 @media (max-width: 1440px) {
     #main-links .sub-main-links {
@@ -510,7 +512,9 @@ ul {
 }
 
 #sub-links {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 5px;
 }
 
 #sub-links li {
@@ -521,7 +525,6 @@ ul {
     font-size: 27px;
     font-size: 1.6875rem;
 }
-
 
 /*
   * Main Content
@@ -1494,6 +1497,11 @@ main.gallery {
 .news .main-news .news-item .news-image {
     height: 600px;
 }
+@media (max-width: 1124px) {
+    .news .main-news .news-item .news-image {
+        height: 360px;
+    }
+}
 .news .main-news .news-item .news-item-title {
     font-weight: 700;
 }
@@ -1557,4 +1565,103 @@ main.gallery {
 .news-detail .news-detail-image img {
     width: 100%;
     height: 100%;
+}
+/* Service */
+.service-header .service-icon {
+    width: 80px;
+    height: 65px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.service-header .service-icon img {
+    width: 100%;
+    height: 100%;
+}
+.service-header .service-title {
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+}
+@media (max-width: 768px) {    
+    .service-header .service-title {
+        font-size: 28px;
+    }
+}
+.service-heading {
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.97);
+    text-transform: unset;
+    margin-bottom: 10px;
+    margin-top: 26px;
+}
+/* Maintenance */
+.maintenance {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.maintenance .maintenance-image {    
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.maintenance .maintenance-image img {
+    width: 100%;
+}
+.maintenance .maintenance-2image {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.maintenance .maintenance-2image img {
+    width: 45%;
+}
+/* Repair */
+
+.repair {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+@media (min-width: 1024px) {    
+    .repair .repair-procedure {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+.repair .repair-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+@media (min-width: 1124px) {
+    .repair .repair-image {
+        height: 600px;
+    }
+}
+.repair .repair-general p {
+    margin-bottom: 16px;
+}
+.repair .repair-image img {
+    width: 100%;
+    height: 100%;
+}
+.repair span.procedure {
+   font-weight: 600;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   display: block;
+}
+.repair .repair-item {
+    margin-bottom: 10px;
+}
+.repair .repair-item .repair-item-image {
+   height: 300px;
+}
+.repair .repair-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.repair .repair-item .repair-item-title {
+    font-style: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
