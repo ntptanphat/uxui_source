@@ -1882,3 +1882,18 @@ ul.tabs li.current {
 .tab-content.current{
     display: inherit;
 }
+
+.load-animation .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    background: url('../images/loading.gif') center no-repeat #000;
+}
+.load-animation.loaded .loader {
+   opacity: 0;
+   visibility: hidden;
+}

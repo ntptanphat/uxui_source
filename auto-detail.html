@@ -84,7 +84,7 @@
     </style>
 </head>
 
-<body class="page page-autodetail">
+<body class="page page-autodetail load-animation">
     <header id="header-container" class="no-animation">
         <div id="header" class="clearfix">
             <!-- <a href="index.html" id="header-logo" class="sprite hide-text">Kindig It</a> -->
@@ -326,7 +326,7 @@ Vỏ xe của hãng Yokohama Geolander A/T/S 37-12.5-20
             </div>
         </div>
     </footer>
-
+    <div class="loader"></div>
     <!-- Bootstrap core JavaScript -->
     <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -348,6 +348,11 @@ Vỏ xe của hãng Yokohama Geolander A/T/S 37-12.5-20
     <!-- <script src="assets/js/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="assets/js/owlcarousel/owl.carousel.js"></script>
     <script type="text/javascript">
+        $(document).ready(function() { 
+            setTimeout(function(){
+                $('body').addClass('loaded');
+            }, 3000);
+        });
     </script>
 
 </body>
