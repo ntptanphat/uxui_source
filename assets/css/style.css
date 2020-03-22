@@ -36,7 +36,7 @@ ul {
 .scrollup {
     position: fixed;
     right: 10px;
-    bottom: 20px;
+    bottom: 90px;
     width: 40px;
     height: 40px;
     line-height: 1.3;
@@ -226,11 +226,17 @@ ul {
     z-index: 30;
     text-align: center;
     background-color: transparent;
-    transition: all 200ms ease-in;
+    transition: all 200ms ease-in;    
 }
 
 #header-container.is-background {
     background-color: black;
+}
+#header-container #header {    
+    transition: all 300ms ease-in;
+}
+#header-container.is-top #header {
+    height: 80px;
 }
 #header-container.header-dark {
     background-color: black;
@@ -268,7 +274,7 @@ ul {
         width: 93px;
         height: 73px;
         left: 42px;
-        top: 68%;
+        top: 60%;
     }
 }
 
@@ -1924,7 +1930,7 @@ main.gallery {
     padding-top: 94px;
 }
 .services .services-top {
-    height: 60vh;
+    height: calc(60vh - 94px);
 }
 .services .services-top img {
     width: 100%;
@@ -1934,10 +1940,23 @@ main.gallery {
 }
 .services .services-item {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
     display: block;
     color: black;
+}
+
+@media (min-width: 1024px) {     
+    .services .services-item {    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (min-width: 769px) {     
+    .services .services-item {    
+        height: 40vh;
+    }
 }
 .services .services-item .services-item-top {    
     display: flex;
@@ -1947,9 +1966,20 @@ main.gallery {
     font-size: 36px;
     font-weight: 700;
 }
+@media (max-width: 1124px) {        
+    .services .services-item .services-item-title {    
+        font-size: 26px;
+    }
+}
 .services .services-item .services-item-image {
     width: 200px;
     height: 200px;
+}
+@media (max-width: 1440px) {    
+    .services .services-item .services-item-image {
+        width: 150px;
+        height: 150px;
+    }
 }
 .services .services-item .services-item-image img {
     width: 100%;
@@ -1979,7 +2009,7 @@ main.gallery {
 }
 .service-heading {
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.97);
     text-transform: unset;
     margin-bottom: 10px;
@@ -2102,6 +2132,7 @@ ul.tabs li.current {
     transition: all 0.5s ease-in-out;
     opacity: 1;
     background: url('../images/loading.gif') center no-repeat #000;
+    z-index: 1;
 }
 .load-animation.loaded .loader {
    opacity: 0;
@@ -2114,16 +2145,22 @@ ul.tabs li.current {
     padding-top: 124px;
     padding-bottom: 50px;
 }
+.policy p {
+    margin-bottom: 6px;
+}
 .policy-heading {
     font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
 }
 @media (max-width: 768px) { 
     .policy-heading {
         font-size: 18px;
         margin-bottom: 10px;
     }
+}
+.policy-image {
+   text-align: center;
 }
 .policy-image img {
   max-width: 100%;

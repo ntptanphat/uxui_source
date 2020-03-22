@@ -40,17 +40,25 @@
 	const $header = $('header');
 	window.onscroll = function() {
 		let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
-
-		if (currentScroll > 100 && lastScroll <= currentScroll){
-			lastScroll = currentScroll;
-			if(!$header.hasClass('no-animation') && !$header.hasClass('is-background')) {
-				$header.addClass("is-background");  
+		if (currentScroll > 100) {
+			if(!$header.hasClass('no-animation') && !$header.hasClass('is-top')) {
+				$header.addClass("is-top");  
 			}
-		}else{
-			lastScroll = currentScroll;
-			if(!$header.hasClass('no-animation') && $header.hasClass('is-background')) {
-				$header.removeClass("is-background");  
+			if (lastScroll <= currentScroll){
+				lastScroll = currentScroll;
+				if(!$header.hasClass('no-animation') && !$header.hasClass('is-background')) {
+					$header.addClass("is-background");  
+				}
+			} else {
+				lastScroll = currentScroll;
+				if(!$header.hasClass('no-animation') && $header.hasClass('is-background')) {
+					$header.removeClass("is-background");  
+				}
 			}
+		} else {
+			if(!$header.hasClass('no-animation') && $header.hasClass('is-top')) {
+				$header.removeClass("is-top");  
+			}  
 		}
 	};
 	// scroll function for changed css starts

@@ -75,7 +75,7 @@
 	</style>
 </head>
 
-<body class="home page-auto">
+<body class="home page-auto load-animation">
 	<header id="header-container" class="">
 		<div id="header" class="clearfix">
 			<!-- <a href="index.html" id="header-logo" class="sprite hide-text">Kindig It</a> -->
@@ -114,57 +114,59 @@
 	</main>
 	<!-- ***************************************** -->
 	<section id="main-nav-container">
-		<a href="#" class="close-button"></a>
-		<div class="vertical-container">
-			<div class="vertical-center" style="height: 100%; display: flex; align-items: center;">
-				<nav id="main-nav">
-					<ul id="main-links">
-						<li>
-							<a href="auto.html">
+        <a href="#" class="close-button"></a>
+        <div class="vertical-container">
+            <div class="vertical-center" style="height: 100%; display: flex; align-items: center;">
+                <nav id="main-nav">
+                    <ul id="main-links">
+                        <li>
+                            <a href="auto.html">
 								SẢN PHẨM </a>
-						</li>
-						<li>
-							<a href="accessories.html">
+                        </li>
+                        <li>
+                            <a href="accessories.html">
 								PHỤ TÙNG </a>
-						</li>
-						<li>
-							<a href="gallery.html">
-								GALLERY </a>
-						</li>
-						<li class="has-submenu">
-							<a href="services.html" target="">
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+								BỘ SƯU TẬP </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="services.html" target="">
 								DỊCH VỤ 
 								</a><span class="expand"></span>
-								<ul class="sub-main-links">
-									<li><a href="repair.html">
-										Sửa chữa</a>										
-									</li>
-									<li><a href="maintenance.html">
-										Bảo dưỡng </a>										
-									</li>
-								</ul>
-						</li>						
-					</ul>
-					<ul id="sub-links">
-						<li>
-							<a href="news.html">TIN TỨC</a>
-						</li>
-						<li>
-							<a href="shop.html">CỬA HÀNG </a>
-						</li>
-						<li>
-							<a href="policy.html">CHÍNH SÁCH </a>
-						</li>
-					</ul>
-					<div class="social-media">
-						<i class="fab fa-facebook-f"></i>
-						<i class="fab fa-twitter"></i>
-						<i class="fab fa-instagram"></i>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</section> <!-- End of Main Nav -->
+                            <ul class="sub-main-links">
+                                <li><a href="repair.html">
+										Sửa chữa</a>
+                                </li>
+                                <li><a href="maintenance.html">
+										Bảo dưỡng </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="sub-links">
+                        <li>
+                            <a href="news.html">TIN TỨC</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">CỬA HÀNG </a>
+                        </li>
+                        <li>
+                            <a href="policy.html">CHÍNH SÁCH </a>
+                        </li>
+                    </ul>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- End of Main Nav -->
+    <div class="loader"></div>
 
 	<!-- Bootstrap core JavaScript -->
 	<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
@@ -203,13 +205,15 @@
 			var url = new URL(url_string);
 			var id = url.searchParams.get("id");
 			if(id) {				
-				owl.trigger('to.owl.carousel', [id, 500]);
-			}
+				owl.trigger('to.owl.carousel', [id, 100]);
+			}					
+			setTimeout(function(){
+					$('body').addClass('loaded');
+				}, 1600);
 	
 		});
 	
 		</script>
-
 </body>
 
 </html>
