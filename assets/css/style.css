@@ -402,7 +402,12 @@ ul {
     width: 320px;
     margin: 0 auto;
 }
-
+@media (max-width: 320px) { 
+    #main-nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 #main-links {
     position: relative;
     padding-bottom: 20px;
@@ -1913,6 +1918,43 @@ main.gallery {
     width: 100%;
     height: 100%;
 }
+/* Services */
+.services {
+    padding-top: 94px;
+}
+.services .services-top {
+    height: 60vh;
+}
+.services .services-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.services .services-item {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    color: black;
+}
+.services .services-item .services-item-top {    
+    display: flex;
+    justify-content: center;
+}
+.services .services-item .services-item-title {    
+    font-size: 36px;
+    font-weight: 700;
+}
+.services .services-item .services-item-image {
+    width: 200px;
+    height: 200px;
+}
+.services .services-item .services-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* Service */
 .service-header .service-icon {
     width: 80px;
@@ -2063,4 +2105,34 @@ ul.tabs li.current {
 .load-animation.loaded .loader {
    opacity: 0;
    visibility: hidden;
+}
+
+/* Policy */
+
+.policy {
+    padding-top: 124px;
+    padding-bottom: 50px;
+}
+.policy-heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) { 
+    .policy-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+.policy-image img {
+  max-width: 100%;
+}
+.policy-list li {
+    margin-bottom: 10px;
+}
+.policy-list li p {
+    margin-bottom: 10px;
+}
+.policy-list li p:first-of-type {
+    margin-top: 10px;
 }
