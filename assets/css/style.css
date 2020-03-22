@@ -877,7 +877,7 @@ footer {
     height: 240px;
 }
 
-@media (max-width: 1366px) {    
+@media (max-width: 1440px) {    
     .accessoriesdetail-slide .item {
         height: 160px;
     }
@@ -2014,7 +2014,7 @@ main.gallery {
 }
 /* Tabs */
 .tabs-container{
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 ul.tabs{
     margin: 0px;
