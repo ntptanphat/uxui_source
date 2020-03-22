@@ -586,9 +586,7 @@ footer {
 }
 
 .owl-carousel .item {
-    /* height: 10rem; */
     background: transparent;
-    /* padding: 1rem; */
 }
 
 .owl-carousel .item h4 {
@@ -596,24 +594,6 @@ footer {
     font-weight: 400;
     margin-top: 0rem;
 }
-
-/* .owl-carousel .owl-nav button.owl-next {
-    background-image: url('../images/icons/arrow-right.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: -40px;
-}
-
-.owl-carousel .owl-nav button.owl-prev {
-    background-image: url('../images/icons/arrow-right.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: -40px;
-} */
 
 .owl-carousel .owl-nav button.owl-prev span,
 .owl-carousel .owl-nav button.owl-next span {
@@ -659,7 +639,6 @@ footer {
     padding-top: 94px;
 }
 .accessoriesdetail-bg {
-    /* background-image: url('../images/accessories/accessories_bg.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -768,10 +747,7 @@ footer {
 }
 
 .accessoriesdetail-main {
-    /* height: calc(100vh - 280px); */
     display: flex;
-    /* padding: 80px 70px; */
-    /* padding: 20px 70px 60px 70px; */
 }
 
 .accessoriesdetail-back-to:hover {
@@ -881,7 +857,6 @@ footer {
     height: 0;
     width: 0;
     margin-top: calc((1 - 1.2) * 0.5em);
-    /* margin-top: -1em; */
 }
 
 .accessoriesdetail-bottom {
@@ -1067,10 +1042,6 @@ footer {
     width: 33.33%;
     height: 560px;
     float: left;
-    /* background: #D26; */
-    /* border: 2px solid #333; */
-    /* border-color: hsla(0, 0%, 0%, 0.5); */
-    /* border-radius: 5px; */
     margin: 0;
 }
 
@@ -1505,7 +1476,6 @@ footer {
     height: 46px;
     color: #FA1205;
     text-align: center;
-    /* border: 3px solid #FA1205; */
     background: url("../images/icons/icon-view.png") no-repeat 0 0;
     background-size: cover;
     border-radius: 46px;
@@ -2053,7 +2023,6 @@ ul.tabs{
 }
 ul.tabs li {
     background: none;
-    /* color: #222; */
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;
@@ -2067,20 +2036,14 @@ ul.tabs li {
     }
 }
 ul.tabs li.current {
-    /* border-bottom: 4px solid #FA1205; */
-    /* border-bottom: 4px solid #fff; */
-    /* color: #222; */
-    /* background-color: rgba(255, 255, 255, 0.67); */
     background-color: #fff;
     color: rgba(0, 0, 0, 0.97);
 }
 
 .tab-content {
     display: none;
-    /* background: rgba(0, 0, 0, 0.67); */
     color: #fff;
     padding: 15px 0;
-    /* color: rgba(0, 0, 0, 0.97); */
 }
 
 .tab-content.current{
