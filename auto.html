@@ -201,6 +201,13 @@
 				// animateOut: 'slideOutDown',
     			animateIn: 'flipInX'
 			});
+			// Get params URL
+			const url_string = window.location.href;
+			var url = new URL(url_string);
+			var id = url.searchParams.get("id");
+			if(id) {				
+				owl.trigger('to.owl.carousel', [id, 500]);
+			}
 	
 		});
 	
