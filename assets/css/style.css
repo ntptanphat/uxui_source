@@ -581,8 +581,8 @@ footer {
 }
 
 .owl-carousel .item {
-    height: 10rem;
-    background: #4DC7A0;
+    /* height: 10rem; */
+    background: transparent;
     /* padding: 1rem; */
 }
 
@@ -612,7 +612,7 @@ footer {
 
 .owl-carousel .owl-nav button.owl-prev span,
 .owl-carousel .owl-nav button.owl-next span {
-    display: none;
+    visibility: hidden;
 }
 .owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover {
@@ -920,19 +920,24 @@ footer {
 .grid-item--width4 {
     width: 8%;
 }
-
 .grid-item--height1 {
     height: 560px;
 }
-
 .grid-item--height2 {
     height: 450px;
 }
-
 .grid-item--height3 {
-    height: 290px;
+    height: 300px;
 }
-
+.grid-item--height4 {
+    height: 250px;
+}
+.grid-item--height5 {
+    height: 260px;
+}
+.grid-item--height6 {
+    height: 200px;
+}
 .grid-item img {
     object-fit: cover;
 }
@@ -940,25 +945,29 @@ footer {
 
 /* ---- static-banner ---- */
 
-
 .static-banner {
   position: absolute;
   left: 10px;
   top: 10px;
   padding: 10px 30px;
   color: white;
-  /* background: #A2C; */
   font-size: 22px;
   z-index: 2;
 }
 
-.auto-carousel .owl-stage-outer {
-    /*height: 100vh;*/
+.auto-carousel {
+    height: 100vh;
+    overflow-x: hidden;
 }
 
+.auto-carousel .owl-stage-outer {
+    height: 100%;
+}
+.auto-carousel .owl-item {
+    height: 100%;
+}
 .auto-carousel .item {
     height: 100vh;
-    width: 100vw;
 }
 
 .auto-carousel .item img {
@@ -972,6 +981,32 @@ footer {
     position: absolute;
     width: 36px;
     height: 56px;
+    transition: all 0.15s ease;
+}
+.auto-carousel.owl-carousel .owl-nav button.owl-prev:before,
+.auto-carousel.owl-carousel .owl-nav button.owl-prev:after,
+.auto-carousel.owl-carousel .owl-nav button.owl-next:before,
+.auto-carousel.owl-carousel .owl-nav button.owl-next:after {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 300%;
+    left: 0;
+    right: 0;
+}
+.auto-carousel.owl-carousel .owl-nav button.owl-prev:before,
+.auto-carousel.owl-carousel .owl-nav button.owl-next:before {
+    bottom: -200%;
+}
+.auto-carousel.owl-carousel .owl-nav button.owl-prev:after,
+.auto-carousel.owl-carousel .owl-nav button.owl-next:after {
+    top: -200%;
+}
+.auto-carousel.owl-carousel .owl-nav button.owl-prev:hover {
+    transform: translateX(-3px);
+}
+.auto-carousel.owl-carousel .owl-nav button.owl-next:hover {
+    transform: translateX(3px);
 }
 
 .auto-carousel .owl-dots {
@@ -984,6 +1019,33 @@ footer {
 
 .auto-pagecontent .auto-carousel .owl-dots {
     bottom: 10px;
+}
+.auto-pagecontent .auto-carousel .owl-dots .owl-dot.active span {
+    background-color: #FA1205;
+}
+.auto-pagecontent .auto-carousel .owl-dots {
+    width: auto;
+}
+.auto-pagecontent .auto-carousel .owl-dots .owl-dot span {
+    width: 30px;
+    height: 4px;
+    border-radius: 0;
+    position: relative;
+}
+.auto-pagecontent .auto-carousel .owl-dots .owl-dot span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    right: 0;
+}
+.auto-pagecontent .auto-carousel .owl-dots .owl-dot:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 .auto-pagecontent .auto-carousel .owl-nav .owl-prev {    
     left: 15px;
@@ -1664,4 +1726,44 @@ main.gallery {
     font-style: 18px;
     font-weight: 600;
     margin-bottom: 6px;
+}
+/* Tabs */
+.tabs-container{
+    padding-bottom: 15px;
+}
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    /* color: #222; */
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.47);
+    color: #000;
+}
+
+ul.tabs li.current {
+    /* border-bottom: 4px solid #FA1205; */
+    /* border-bottom: 4px solid #fff; */
+    /* color: #222; */
+    /* background-color: rgba(255, 255, 255, 0.67); */
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.97);
+}
+
+.tab-content {
+    display: none;
+    /* background: rgba(0, 0, 0, 0.67); */
+    color: #fff;
+    padding: 15px 0;
+    /* color: rgba(0, 0, 0, 0.97); */
+}
+
+.tab-content.current{
+    display: inherit;
 }
