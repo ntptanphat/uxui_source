@@ -209,7 +209,6 @@
         const accessoriesFeaturedEl = $('#accessoriessFeatured');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesLightsData.find(item => item.id == accessoriesId);
-        // console.log(accessoriesData.find(item => item.id == accessoriesId));
         accessoriesTitleEl.html(accessoriesActive.title);
         accessoriesDescriptionEl.html(accessoriesActive.description);
         accessoriesFeaturedEl.html(accessoriesActive.featured);
@@ -222,9 +221,9 @@
         const accessoriesDescriptionEl = $('#accessoriesDescription');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesWheelData.find(item => item.id == accessoriesId);
-        // console.log(accessoriesData.find(item => item.id == accessoriesId));
         accessoriesTitleEl.html(accessoriesActive.title);
         accessoriesDescriptionEl.html(accessoriesActive.description);
+        accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
     })
     
@@ -234,9 +233,9 @@
         const accessoriesDescriptionEl = $('#accessoriesDescription');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesSeatData.find(item => item.id == accessoriesId);
-        // console.log(accessoriesData.find(item => item.id == accessoriesId));
         accessoriesTitleEl.html(accessoriesActive.title);
         accessoriesDescriptionEl.html(accessoriesActive.description);
+        accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
     })
     
@@ -246,9 +245,9 @@
         const accessoriesDescriptionEl = $('#accessoriesDescription');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesSteeringWheelData.find(item => item.id == accessoriesId);
-        // console.log(accessoriesData.find(item => item.id == accessoriesId));
         accessoriesTitleEl.html(accessoriesActive.title);
         accessoriesDescriptionEl.html(accessoriesActive.description);
+        accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
     })
     function calcTabsContentHeight() {
