@@ -99,7 +99,7 @@
         {
             id: 6,
             title: 'S602 AZZMACKA ',
-            imgSrc: 'assets/images/accessories/wheelts/6.jpg',
+            imgSrc: 'assets/images/accessories/wheel/6.jpg',
             description: 'Các bánh xe cung cấp sự cân bằng hoàn hảo của trọng lượng và độ bền vật liệu, vì vậy bạn có thể tận dụng tối đa chiếc xe của mình cả trên đường đua và trên đường trường',
             featured: '<p>-Được rèn để tạo ra sức mạnh và độ bền tối đa </p><p>-Xây dựng nhẹ để cải thiện hiệu suất </p><p>-Thiết kế độc đáo giúp bạn nổi bật giữa đám đông </p><p>-Hoàn thiện cao cấp cho một cái nhìn cực ký nổi bật </p>'
         }
