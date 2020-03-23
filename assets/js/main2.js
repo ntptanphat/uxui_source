@@ -85,6 +85,6 @@
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
 
 })(this.jQuery);
