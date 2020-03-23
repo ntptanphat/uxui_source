@@ -219,6 +219,7 @@
         const accessoriesId = $(this).data("id");
         const accessoriesTitleEl = $('#accessoriesTitle');
         const accessoriesDescriptionEl = $('#accessoriesDescription');
+        const accessoriesFeaturedEl = $('#accessoriessFeatured');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesWheelData.find(item => item.id == accessoriesId);
         accessoriesTitleEl.html(accessoriesActive.title);
@@ -231,6 +232,7 @@
         const accessoriesId = $(this).data("id");
         const accessoriesTitleEl = $('#accessoriesTitle');
         const accessoriesDescriptionEl = $('#accessoriesDescription');
+        const accessoriesFeaturedEl = $('#accessoriessFeatured');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesSeatData.find(item => item.id == accessoriesId);
         accessoriesTitleEl.html(accessoriesActive.title);
@@ -243,6 +245,7 @@
         const accessoriesId = $(this).data("id");
         const accessoriesTitleEl = $('#accessoriesTitle');
         const accessoriesDescriptionEl = $('#accessoriesDescription');
+        const accessoriesFeaturedEl = $('#accessoriessFeatured');
         const accessoriesImageSrcEl = $('#accessoriesImageSrc');
         const accessoriesActive = accessoriesSteeringWheelData.find(item => item.id == accessoriesId);
         accessoriesTitleEl.html(accessoriesActive.title);
