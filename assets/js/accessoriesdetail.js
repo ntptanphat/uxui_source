@@ -178,7 +178,7 @@
             title: 'Vô Lăng Hiệu Merceds Bọc da màu đen ',
             imgSrc: 'assets/images/accessories/steering_wheel/5.jpg',
             description: 'Tay lái có tay cầm bằng sợi carbon và phần còn lại được bọc da cao cấp. Tay lái NRG chắc chắn sẽ cung cấp cho chiếc xe của bạn thêm khả năng kiểm soát và kiểu dáng.',
-            featured: '<p>Đường kính bánh xe: 13,78 "/ 350mm </p><p>Độ sâu đĩa: phẳng </p><p>Màu bám: Sợi carbon </p><p>Hình dạng: Tròn </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>-Được chế tác tinh xảo từ những vật liệu cao cấp </p><p>-Được thiết kế để phù hợp với tiêu chuẩn chất lượng nghiêm ngặt </p><p>-Chất lượng cao với giá cả phù hợp với ngân sách </p>'
+            featured: '<p>Đường kính bánh xe: 13,78 "/ 350mm </p><p>Độ sâu đĩa: phẳng </p><p>Màu bám: Sợi carbon </p><p>Hình dạng: Tròn </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>- Được chế tác tinh xảo từ những vật liệu cao cấp </p><p>- Được thiết kế để phù hợp với tiêu chuẩn chất lượng nghiêm ngặt </p><p>- Chất lượng cao với giá cả phù hợp với ngân sách </p>'
         },
         {
             id: 5,
@@ -202,6 +202,12 @@
             featured: '<p>Đường kính bánh xe: 12,60 "/ 320mm </p><p>Độ sâu đĩa: phẳng </p><p>Màu bám: Đen </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>- Được chế tác tinh xảo từ những vật liệu cao cấp </p><p>- Được thiết kế để phù hợp với tiêu chuẩn chất lượng nghiêm ngặt </p><p>- Chất lượng cao với giá cả phù hợp với ngân sách </p>'
         }
     ];
+    function resetTabs() {
+        $('.tabs-container .tab-link').removeClass('current');
+        $('.tabs-container .tab-link:first').addClass('current');
+        $('.tabs-container .tab-content').removeClass('current');
+        $('.tabs-container .tab-content:first').addClass('current');
+    }
     $('.accessoriesdetail-lights .accessoriesdetail-slide').on('click', '.item', function (event) {
         const accessoriesId = $(this).data("id");
         const accessoriesTitleEl = $('#accessoriesTitle');
@@ -213,6 +219,8 @@
         accessoriesDescriptionEl.html(accessoriesActive.description);
         accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
+        
+        resetTabs();
     })
     
     $('.accessoriesdetail-wheel .accessoriesdetail-slide').on('click', '.item', function (event) {
@@ -226,6 +234,8 @@
         accessoriesDescriptionEl.html(accessoriesActive.description);
         accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
+        
+        resetTabs();
     })
     
     $('.accessoriesdetail-seat .accessoriesdetail-slide').on('click', '.item', function (event) {
@@ -239,6 +249,8 @@
         accessoriesDescriptionEl.html(accessoriesActive.description);
         accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
+        
+        resetTabs();
     })
     
     $('.accessoriesdetail-steeringwheel .accessoriesdetail-slide').on('click', '.item', function (event) {
@@ -252,12 +264,14 @@
         accessoriesDescriptionEl.html(accessoriesActive.description);
         accessoriesFeaturedEl.html(accessoriesActive.featured);
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
+        
+        resetTabs();
     })
     function calcTabsContentHeight() {
         const $accessoriesdetailmainhHeight = document.getElementsByClassName("accessoriesdetail-main")[0].offsetHeight - 70;
         const $tabsContentEl = $('.accessoriesdetail-main-content-featured');
         const $tabsDescriptionEl = $('#describeContent');
-        const $accessoriesdetailmainhHeightCorrect = $accessoriesdetailmainhHeight - 88;
+        const $accessoriesdetailmainhHeightCorrect = $accessoriesdetailmainhHeight - 88 - 15;
         $tabsContentEl.css("height", $accessoriesdetailmainhHeightCorrect);
         $tabsDescriptionEl.css("height", $accessoriesdetailmainhHeightCorrect);
     }
