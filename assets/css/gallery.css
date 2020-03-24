@@ -1,0 +1,79 @@
+.gallery {
+    background-image: url('../images/menu_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#gallery .section-is-filter {
+    text-align: center;
+    }
+#gallery .section-is-filter .list-filter {
+    list-style: none;
+    margin-bottom: 40px;
+    }
+#gallery .section-is-filter .list-filter .filter-tab {
+    display: inline-block;
+    margin-right: 30px;
+    }
+    @media screen and (max-width: 425px) {
+        #gallery .section-is-filter .list-filter .filter-tab {
+            margin-bottom: 10px;
+      }
+    }
+#gallery .section-is-filter .list-filter .filter-tab.filter-active {
+    font-weight: bold;
+    font-size: large;
+    color: #000;
+    }
+    #gallery .section-is-filter .list-filter .filter-tab a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+    }
+    #gallery .section-is-filter .list-filter .filter-tab.filter-active a {
+        color: #fff;
+    }
+    #gallery .section-is-content-wp .w-item {
+    position: relative;
+    }
+    #gallery .section-is-content-wp .w-item .img-wp img {
+    width: 100%;
+    height: 352px;
+    object-fit: cover;
+    }
+    #gallery .section-is-content-wp .w-item .w-content {
+    position: absolute;
+    text-align: center;
+    border: 4px solid #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    }
+    #gallery .section-is-content-wp .w-item .w-content:hover {
+    opacity: 1;
+    }
+    #gallery .section-is-content-wp .w-item .w-content:hover .w-hover {
+    opacity: .6;
+    }
+    #gallery .section-is-content-wp .w-item .w-content:hover .w-text {
+    opacity: 1;
+    }
+    #gallery .section-is-content-wp .w-item .w-content .w-text {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #gallery .section-is-content-wp .w-item .w-content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    }
+    #gallery .section-is-content-wp .w-item .w-content h4 {
+    color: #fff;
+    text-transform: capitalize;
+    }
