@@ -15,11 +15,13 @@
         }
 		lastScroll = currentScroll;        
 	};
-	$('.section-is-content-wp').isotope({
-		// options
-		itemSelector: '.isotopeItem',
-		layoutMode: 'fitRows'
-	  });
+		$(window).load(function(){
+			$('.section-is-content-wp').isotope({
+				// options
+				itemSelector: '.isotopeItem',
+				layoutMode: 'fitRows'
+			});
+		});	
   
 	  var $container = $('.section-is-content-wp');
 	  $(document).on('click','.filter-tab a',function(){
