@@ -424,6 +424,11 @@ ul {
     width: 320px;
     margin: 0 auto;
 }
+@media (min-width: 1667px) { 
+    #main-nav {
+        width: 380px;
+    }
+}
 @media (max-width: 320px) { 
     #main-nav {
         padding-left: 30px;
@@ -506,7 +511,6 @@ ul {
 
 #main-links a {
     font-size: 50px;
-    font-size: 3.125rem;
 }
 
 #main-links .sub-main-links {
@@ -788,7 +792,8 @@ footer {
 }
 
 .accessoriesdetail-main-image-wrap {
-    height: 200px;
+    /* height: 200px; */
+    min-height: 140px;
     border: 3px solid transparent;
 }
 @media (max-width: 1024px) {    
@@ -859,6 +864,11 @@ footer {
     .accessoriesdetail-item-left {
         flex: 0 0 280px;
         max-width: 280px;
+    }
+}
+@media (min-width: 769px) {    
+    .accessoriesdetail-item-left  {       
+        padding-top: 0;
     }
 }
 @media (max-width: 769px) {    
@@ -973,6 +983,11 @@ footer {
 
 .accessoriesdetail-main-content-title {
     font-size: 36px;
+}
+@media (max-width: 1024px) {    
+    .accessoriesdetail-main-content-title {
+        font-size: 26px;
+    }
 }
 #describeContent {
     overflow-y: auto;
@@ -1105,9 +1120,9 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 1920px) {    
+@media (min-width: 1667px) {    
     .accessories-item .accessories-item-image {
-        height: 350px;
+        height: 260px;
     }
 }
 
@@ -1118,7 +1133,7 @@ footer {
 }
 
 .accessories-item .accessories-item-image img {
-    width: 70%;
+    width: 220px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -2089,13 +2104,14 @@ main.gallery {
     }
 }
 .services .services-item .services-item-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 @media (max-width: 1440px) {    
     .services .services-item .services-item-image {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        padding: 10px;
     }
 }
 .services .services-item .services-item-image img {
@@ -2294,3 +2310,11 @@ ul.tabs li.current {
 .guarantee {
     padding-top: 120px
 }
+img { max-width: 100%;}
+
+@media (min-width: 1667px) {    
+    .repair p, .guarantee p, .maintenance p {
+        font-size: 20px;
+    }
+}
+

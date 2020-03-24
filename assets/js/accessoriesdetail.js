@@ -271,10 +271,13 @@
         const $accessoriesdetailmainhHeight = document.getElementsByClassName("accessoriesdetail-main")[0].offsetHeight - 70;
         const $tabsContentEl = $('.accessoriesdetail-main-content-featured');
         const $tabsDescriptionEl = $('#describeContent');
-        const $accessoriesdetailmainhHeightCorrect = $accessoriesdetailmainhHeight - 88 - 15;
+        const $accessoriesdetailmainhHeightCorrect = $accessoriesdetailmainhHeight - 88 - 20;
         $tabsContentEl.css("height", $accessoriesdetailmainhHeightCorrect);
         $tabsDescriptionEl.css("height", $accessoriesdetailmainhHeightCorrect);
-    }
+        const $imageWrap = $('.accessoriesdetail-main-image-wrap');
+        const $imageWrapWidth = $imageWrap.height();
+        $imageWrap.css("height", $imageWrapWidth);
+    }   
     var document_width, document_height;
     
     $(document).ready(function() {
