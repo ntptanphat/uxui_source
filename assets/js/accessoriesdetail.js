@@ -87,7 +87,7 @@
             title: 'VENOM Matte Black ',
             imgSrc: 'assets/images/accessories/wheel/4.jpg',
             description: 'Nhanh nhẹn và tuyệt đỉnh , bánh xe này được thiết kế để bổ sung cho hiệu suất và tính thẩm mỹ cho chiếc xe của bạn. ',
-            featured: '><p>-Máy tính cân bằng cho hoạt động trơn tru, không rung </p><p>-Được xây dựng từ vật liệu đúc cải tiến </p><p>-Thiết kế đa chấu hấp dẫn </p>'
+            featured: '<p>-Máy tính cân bằng cho hoạt động trơn tru, không rung </p><p>-Được xây dựng từ vật liệu đúc cải tiến </p><p>-Thiết kế đa chấu hấp dẫn </p>'
         },
         {
             id: 5,
@@ -254,13 +254,31 @@
         accessoriesImageSrcEl.attr('src', accessoriesActive.imgSrc);
     })
     function calcTabsContentHeight() {
-        const $mainContent = $('.accessoriesdetail-main-content');
+        const $accessoriesdetailmainhHeight = document.getElementsByClassName("accessoriesdetail-main")[0].offsetHeight - 70;
         const $tabsContentEl = $('.accessoriesdetail-main-content-featured');
-        const $tabsContainerHeight = $mainContent.height() - 88 - 30;
-        $tabsContentEl.css("height", $tabsContainerHeight);
+        const $tabsDescriptionEl = $('#describeContent');
+        const $accessoriesdetailmainhHeightCorrect = $accessoriesdetailmainhHeight - 88;
+        $tabsContentEl.css("height", $accessoriesdetailmainhHeightCorrect);
+        $tabsDescriptionEl.css("height", $accessoriesdetailmainhHeightCorrect);
     }
-    calcTabsContentHeight();
-        $(window).on('resize', function(){
-            calcTabsContentHeight();
+    var document_width, document_height;
+    
+    $(document).ready(function() {
+            document_width=$(document).width();
+            document_height=$(document).height();
+            if($(window).width() > 768) {
+                calcTabsContentHeight();
+            }
+    });
+
+    $(window).resize(function() {
+        if(document_width!=$(document).width() || document_height!=$(document).height()) 
+        {
+            document_width=$(document).width(); document_height=$(document).height();
+            if($(window).width() > 768) {
+                calcTabsContentHeight();
+            }
+        }
     });
 })(this.jQuery);
+
