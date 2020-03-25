@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Custom Car</title>
+	<title>Custom Car | About Us</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,44 +34,86 @@
 	<link href="assets/css/video.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<style>
-	/* Feel free to change duration  */ 
-	.animated  {
-	-webkit-animation-duration : 1000 ms  ;
-	animation-duration : 1000 ms  ;
-	-webkit-animation-fill-mode : both  ;
-	animation-fill-mode : both  ;
-	}  
-	/* .owl-animated-out - only for current item */ 
-	/* This is very important class. Use z-index if you want move Out item above In item */ 
-	.owl-animated-out {
-	z-index : 1 
-	}
-	/* .owl-animated-in - only for upcoming item
-	/* This is very important class. Use z-index if you want move In item above Out item */ 
-	.owl-animated-in {
-	z-index : 0 
-	}
-	/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
-	.fadeOut  {
-	-webkit-animation-name : fadeOut  ;
-	animation-name : fadeOut  ;
-	}  
-	@-webkit-keyframes  fadeOut  {
-	0% {
-		opacity : 1   ;
-	}  
-	100% {
-		opacity : 0   ;
-	}  
-	}
-	@keyframes  fadeOut  {
-	0% {
-		opacity : 1   ;
-	}  
-	100% {
-		opacity : 0   ;
-	}  
-	}
+	#sync1 .item {
+        background: #0c83e7;
+        padding: 80px 0px;
+        margin: 5px;
+        color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    #sync2 .item {
+        background: #c9c9c9;
+        padding: 10px 0px;
+        margin: 5px;
+        color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #sync2 .item h1 {
+        font-size: 18px;
+    }
+    #sync2 .current .item {
+        background: #0c83e7;
+    }
+    .owl-theme {
+        /*default owl-theme theme reset .disabled:hover links */
+    }
+    .owl-theme .owl-nav [class*='owl-'] {
+        transition: all 0.3s ease;
+    }
+    .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+        background-color: #d6d6d6;
+    }
+    #sync1.owl-theme {
+        position: relative;
+    }
+    #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+        width: 22px;
+        height: 40px;
+        margin-top: -20px;
+        position: absolute;
+        top: 50%;
+    }
+    #sync1.owl-theme .owl-prev {
+        left: 10px;
+    }
+    #sync1.owl-theme .owl-next {
+        right: 10px;
+    }
+    .owl-carousel {
+	 max-width: 320px;
+}
+ .owl-carousel .owl-nav {
+	 padding-top: 0.4em;
+	 font-family: sans-serif;
+	 font-size: 0.8em;
+}
+ .owl-carousel .owl-nav > div {
+	 padding: 0.4em 1.4em;
+	 border: 1px solid #333;
+	 background: #000;
+	 color: white;
+	 border-radius: 0.4em;
+	 background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(0, 0, 0, .2));
+	 box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, .5);
+}
+ .owl-carousel .owl-nav > div:hover {
+	 background-color: #333;
+}
+ .owl-carousel .owl-nav .owl-prev {
+	 float: left;
+}
+ .owl-carousel .owl-nav .owl-next {
+	 float: right;
+}
+ 
+    
 	</style>
 </head>
 
@@ -89,41 +131,13 @@
 			</a>
 		</div>
 	</header> <!-- End of Header -->
-	<main class="full-height">
-		<section class="auto-pagecontent">
-			<div class="fadeOut owl-carousel auto-carousel owl-theme">
-				<div class="item">
-					<a href="auto-detail.html">
-						<img src="assets/images/auto/main1.jpg" alt="" />
-					</a>
-					<div class="box-content">
-						<h3 class="box-content-title">
-							Bugatti Centodieci Unveiled At Pebble Beach
-						</h3>
-					</div>
-				</div>
-				<div class="item">
-					<a href="auto-detail-2.html">
-						<img src="assets/images/auto/main2.jpg" alt="" />
-					</a>
-					<div class="box-content">
-						<h3 class="box-content-title">
-							The Ferrari F8 Tributo builds on the 488 GTB
-						</h3>
-					</div>
-				</div>
-				<div class="item">
-					<a href="auto-detail-3.html">
-						<img src="assets/images/auto/main3.jpg" alt="" />
-					</a>
-					<div class="box-content">
-						<h3 class="box-content-title">
-							The Koenigsegg Konigsei Hypercar Would Make
-						</h3>
-					</div>
-				</div>
+	<main class="asdfdsafds">
+		<div class="owl-carousel">
+            <img src="http://placehold.it/320x240?text=Slide%200">
+            <img src="http://placehold.it/320x240?text=Slide%201">
+            <img src="http://placehold.it/320x240?text=Slide%202">
+            <img src="http://placehold.it/320x240?text=Slide%203">
           </div>
-		</section>
 	</main>
 	<!-- ***************************************** -->
 	<section id="main-nav-container">
@@ -182,7 +196,7 @@
         </div>
     </section>
     <!-- End of Main Nav -->
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 
 	<!-- Bootstrap core JavaScript -->
 	<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
@@ -206,27 +220,15 @@
 	<script type="text/javascript">
 		  $(document).on('ready', function() {	  
 	
-			var owl = $('.owl-carousel');
-              owl.owlCarousel({
-			    items:1,
-			    // autoHeight:true,
-				effects: "fade",
-				nav: true,
-				loop: true, 
-				smartSpeed: 450,
-				animateIn: 'fadeIn',
-				animateOut: 'fadeOut',	
-			});
-			// Get params URL
-			const url_string = window.location.href;
-			var url = new URL(url_string);
-			var id = url.searchParams.get("id");
-			if(id) {				
-				owl.trigger('to.owl.carousel', [id, 100]);
-			}					
-			setTimeout(function(){
-				$('body').addClass('loaded');
-			}, 1600);
+			$(".owl-carousel").owlCarousel({
+  loop: true,
+  autoplay: true,
+  items: 1,
+  nav: true,
+  autoplayHoverPause: true,
+  animateOut: 'slideOutUp',
+  animateIn: 'slideInUp'
+});
 	
 		});
 	
