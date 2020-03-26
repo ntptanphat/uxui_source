@@ -238,8 +238,8 @@ html {
   h2,
   h3,
   h4,
-  h6 {
-    font-family: "Oswald", sans-serif;
+  h6 {    
+    font-family: "Milano", sans-serif;  
     font-weight: normal;
     text-transform: uppercase;
     margin: 0; }
@@ -257,8 +257,8 @@ html {
     h4 a {
       color: #FA1205; }
   
-  h5 {
-    font-family: "Roboto Slab", sans-serif;
+  h5 {    
+    font-family: "Milano", sans-serif;  
     color: #FFFFFF;
     margin: 0; }
   

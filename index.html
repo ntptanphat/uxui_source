@@ -86,20 +86,11 @@
             <video loop muted data-autoplay id="myVideo">
                 <source src="assets/videos/video.mp4" type="video/mp4"> Your browser does not support HTML5 video.
             </video>
+            
             <div style="position: absolute; left: 50px;
-			  top: 20%; text-align: left;">
-                <h3 class="home-banner-subtitle">AVENTADOR SVG</h3>
-                <div class="home-banner-title">REAL EMOTIONS SHAPE THE FUTURE</div>
-                <button type="button" class="btn btn-primary m_t-30 home-banner-button">SHOP NOW</button>
-                <!-- <h3 id="subTitleTypeit"
-					style="font-size: 36px; color: #ed472e; font-weight: bold; margin-bottom: 20px;"></h3>
-				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
-				<button type="button" class="btn btn-primary m_t-20">SHOP NOW</button> -->
-            </div>
-            <!-- <div style="position: absolute; left: 50px;
-			  top: 50%; text-align: left; width: 820px">
-				<img src="assets/images/new-logan.png" alt="logan" style="width: 100%" />
-			</div> -->
+			  top: 20%; width: 420px">
+				<img src="assets/images/afdsafadsfdsf.gif" alt="logan" style="width: 100%" />
+			</div>
         </div>
         <!-- <div class="section home_bg home_bg_1">
 			<div class="intro">
@@ -110,16 +101,32 @@
 		</div> -->
         <div class="section home_bg home_bg_2" id="section2">
             <!-- <h1>Caption</h1> -->
-            <div class="intro" style="padding-left: 100px;">
+            <div class="logan-content-wrap">
+                <h3 class="home-banner-subtitle">AVENTADOR SVG</h3>
+                <div class="home-banner-title">REAL EMOTIONS SHAPE THE FUTURE</div>
+                <button type="button" class="btn btn-primary m_t-30 home-banner-button">SHOP NOW</button>
+                <!-- <h3 id="subTitleTypeit"
+					style="font-size: 36px; color: #ed472e; font-weight: bold; margin-bottom: 20px;"></h3>
+				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
+				<button type="button" class="btn btn-primary m_t-20">SHOP NOW</button> -->
+            </div>
+            <!-- <div class="intro" style="padding-left: 100px;">
                 <h1 style="margin-bottom: 20px;">Custom Car History and Evolution of Custom Cars</h1>
                 <p></p>
                 <div style="text-align: left;">Let's take a look at some of the aspects of Custom Car History and a Short Look at the Evolution of Custom Cars!</div>
-            </div>
+            </div> -->
         </div>
         <div class="section home_bg home_bg_3" id="section3">
-            <div class="intro">
-                <h1>Explore Upgrade Opportunities with a Custom Build</h1>
-                <p style="color: #fff;">Performance enthusiasts demand more out of their cars. We get it at 76 Customs. When it comes to redefining the classics, there's a lot of aftermarket and performance parts at your fingers.</p>
+            <div class="logan-content-wrap center">
+                <h3 class="home-banner-subtitle">AVENTADOR SVG</h3>
+                <div class="home-banner-title">HERE IS THE STORY OF WILLIAM LAI'S <br />PASSION FOR HIS PORSCHE 911 "KAEGE"</div>
+                <a href="/gallery.html">
+                    <button type="button" class="btn btn-primary m_t-30 home-banner-button">Gallery</button>
+                </a>
+                <!-- <h3 id="subTitleTypeit"
+					style="font-size: 36px; color: #ed472e; font-weight: bold; margin-bottom: 20px;"></h3>
+				<p style=" font-size: 50px; color: white; font-weight: bold; font-family: Arvo;" id="titleTypeit"></p>
+				<button type="button" class="btn btn-primary m_t-20">SHOP NOW</button> -->
             </div>
         </div>
         <div class="section fp-auto-height">
@@ -234,12 +241,22 @@
                 afterLoad: function(origin, destination, direction) {
                     //section 2
                     if (destination.index == 1) {
-                        document.querySelector('#section2').querySelector('p').style.opacity = 1;
+                        // document.querySelector('#section2').querySelector('p').style.opacity = 1;
+                        document.querySelector('#section2').classList.add('show-text')
+                        // $('#section2').addClass('show-text');
+                    }
+                    if (destination.index == 2) {
+                        // document.querySelector('#section2').querySelector('p').style.opacity = 1;
+                        document.querySelector('#section3').classList.add('show-text')
+                        // $('#section2').addClass('show-text');
                     }
 
                     //back to original state
                     else if (origin && origin.index == 1) {
-                        document.querySelector('#section2').querySelector('p').style.opacity = 0;
+                        // document.querySelector('#section2').querySelector('p').style.opacity = 0;
+                        console.log('here');
+                        
+                        // $('#section2').addClass('show-text');
                     }
 
                     //section 3 is using the state classes to fire the animation
