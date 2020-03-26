@@ -2330,6 +2330,13 @@ img { max-width: 100%;}
     text-transform: uppercase;
     line-height: 1.525em;
 }
+.auto-carousel .item .box-content .box-content-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.525em;
+    color: #ed472e;
+}
 @media (min-width: 1440px) {    
     .auto-carousel .item .box-content {
         width: 55%;
