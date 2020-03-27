@@ -114,6 +114,9 @@ ul {
 .heading-bold::before {
     top: 0;
 } 
+.heading-custom::before {
+    top: 5px;
+}
 /* / Heading */
 
 #main-nav-container .close-button:hover:before,
@@ -1952,20 +1955,45 @@ main.gallery {
     object-fit: cover;
 }
 .news-item .news-item-title {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
 }
 .news-item .news-item-title a {
     color: #fff;
 }
+.news-item .news-item-meta {
+    margin-top: 4px;
+}
+.news-item .news-item-meta-item {
+    display: inline-block;
+    color: #fff;
+}
+.news-item .news-item-meta-item span {
+    padding-left: 6px;
+}
+.news-item .news-item-meta-item span,
+.news-item .news-item-meta-item i {
+    transition: all 0.125s ease-out;
+    font-size: 13px;
+}
+.news-item .news-item-meta-item:hover span,
+.news-item .news-item-meta-item:hover i {
+    color: #ed472e;
+    cursor: pointer;
+}
+.news-item .news-item-meta .news-item-date {
+    margin-right: 20px;
+}
 .news-item .news-box-content {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0.53);
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 12px 20px;
     box-sizing: content-box;
+    min-height: 50px;
 }
 .news-item .news-item-shorstdecription {
     font-size: 16px;
@@ -1984,6 +2012,8 @@ main.gallery {
 }
 .news .main-news .news-item .news-item-title {
     font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 6px;
 }
 .news .main-news a {
     color: #fff;
@@ -2072,6 +2102,48 @@ main.gallery {
 .news-sidebar .news-related-item {
     display: flex;
     margin-bottom: 15px;
+}
+.news-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.news-gallery .news-gallery-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-bottom: 6px;
+}
+.news-gallery .news-gallery-item .item-img {
+    position: relative;
+    height: 100%;
+    object-fit: fill;
+    cursor: pointer;
+}
+.news-gallery .news-gallery-item .item-img a {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.news-gallery .news-gallery-item .item-img a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    transition: all 0.125s ease-in;
+    z-index: 0;
+}
+.news-gallery .news-gallery-item .item-img a:hover:before {
+    background-color: transparent;
+}
+.news-gallery .news-gallery-item img{
+    width: 100%;
+    height: 100%;
 }
 .news-related-item .news-related-image {
     flex: 0 0 35%;
