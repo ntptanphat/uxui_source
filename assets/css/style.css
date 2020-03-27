@@ -754,7 +754,7 @@ footer {
 .accessoriesdetail-item-title {
     font-size: 48px;
     color: #FFF;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
 }
 @media (max-width: 1366px) {
