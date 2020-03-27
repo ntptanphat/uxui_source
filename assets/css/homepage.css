@@ -27,6 +27,10 @@
 .home_bg_4 {
     background-image: url('../images/home/homepage-background-4.jpg');
 }
+.home_bg_3 .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 @media (max-width: 1440px) {    
     .btn.btn-small {
