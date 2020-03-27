@@ -259,6 +259,21 @@ ul {
     letter-spacing: .2em;
     transition: all 0.3s ease;
 }
+@media (max-width: 1366px) {    
+    #header-container h1 {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 768px) {    
+    #header-container h1 {
+        font-size: 1.45rem;
+    }
+}
+@media (max-width: 425px) {    
+    #header-container h1 {
+        font-size: 1.225rem;
+    }
+}
 #header-container.is-top h1 {
     line-height: 80px;
 }
@@ -276,10 +291,15 @@ ul {
     display: block;
     position: absolute;
     left: 35px;
-    top: 60%;
+    top: 65%;
     width: 73px;
     height: 53px;
     margin-top: -36px;
+}
+@media screen and (max-width: 425px) {
+    #header-logo {       
+        top: 65%;
+    }
 }
 
 @media (min-width: 1366px) {    
