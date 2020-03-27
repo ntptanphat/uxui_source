@@ -966,6 +966,12 @@ footer {
 .accessoriesdetail-main-content-description {
     overflow-y: auto;
 }
+@media (min-width: 1440px) {    
+    .accessoriesdetail-main-content-description,
+    .accessoriesdetail-main-content-featured {
+        font-size: 20px;
+    }
+}
 
 .accessoriesdetail-bottom {
     padding-top: 30px;
@@ -1072,6 +1078,15 @@ footer {
     }
     .accessoriesdetail-slide .item {
         height: 180px;
+    }
+}
+@media (min-width: 1667px) {    
+    .accessoriesdetail-main {
+        height: calc(100% - 300px);
+        max-height: calc(100% - 300px);
+    }
+    .accessoriesdetail-slide .item {
+        height: 220px;
     }
 }
 .accessoriesdetail-main-content-featured p {
