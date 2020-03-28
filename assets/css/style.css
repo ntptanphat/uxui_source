@@ -2030,6 +2030,24 @@ footer {
 main.gallery {
     position: relative;
 }
+.gallery .gallery-main {
+    min-height: 100vh; 
+    max-height: 100vh;
+}
+.gallery .gallery-main img {
+    width: 100%; 
+    height: 100vh;
+}
+@media (max-width: 540px) {    
+    .gallery .gallery-main {
+        min-height: 50vh; 
+        max-height: 50vh;
+    }
+    .gallery .gallery-main img {
+        width: 100%; 
+        height: 50vh;
+    }
+}
 .gallery .gallery-title {
     font-size: 32px;
     font-weight: bold;
