@@ -39,6 +39,17 @@
 }
 
 .gallery .panel-filter.fixed {
+    position: relative;
+}
+.gallery .panel-filter.fixed:after {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   min-height: 67px;
+}
+.gallery .panel-filter.fixed .section-is-filter{
     position: fixed;
     top: 94px;
     left: 0;
