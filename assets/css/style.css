@@ -776,6 +776,12 @@ footer {
     background-size: cover;
     opacity: 0.66;
     cursor: pointer;
+    transition: all 0.125s ease-in;
+}
+
+.accessoriesdetail-back-to:hover {
+    opacity: 1;
+    transform: translateX(-10px);
 }
 
 @media (max-width: 768px) {     
@@ -1444,7 +1450,112 @@ footer {
 .autoDetail-topcontent {
     position: relative;
 }
+.autoDetail-topcontent-intro::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, black 10%, transparent, transparent, transparent);
+}
+.autoDetail-topcontent-intro {
+    position: relative;    
+    background-image: url('../images/accessories/seat/bg.png');    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.autoDetail-topcontent-detail::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, black 15%, transparent);
+}
+.autoDetail-intro {
+    width: 75%;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.30);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+@media screen and (max-width:768px) {
+    .autoDetail-topcontent-intro {
+        min-height: 100vh;
+    }
+    .autoDetail-intro {
+        width: 95%;
+        padding: 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery-detail-image {
+        height: 50vh;
+    }
+}
+.navigate-to {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.navigate-to span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/icons/chevron-double-down.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.66;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+@media screen and (max-width:768px) {
+    .navigate-to.sp-dn {
+        visibility: hidden;
+    }
+}
+.navigate-to:hover span {
+    opacity: 1;
+    transform: translateY(10px);
+}
+.autoDetail-intro .autoDetail-intro-info-title {
+   font-size: 46px;
+   font-weight: bold;
+   color: #ed472e;
+}
+.autoDetail-intro .autoDetail-intro-info-description {
+    font-size: 20px;
+    color: #fff;
+ }
+ @media screen and (max-width:768px) {
+    .autoDetail-intro .autoDetail-intro {
+        padding: 20px;
+    }
+    .autoDetail-intro .autoDetail-intro-info-title {
+        font-size: 36px;
+     }
+     .autoDetail-intro .autoDetail-intro-info-description {
+         font-size: 16px;
+      }
+}
 .autoDetail-topcontent img {
     width: 100%;
     height: 100%;
@@ -1614,10 +1725,12 @@ footer {
     background-size: cover;
     opacity: 0.66;
     cursor: pointer;
+    transition: all 0.125s ease-in;
 }
 
 .autodetail-back-to:hover {
     opacity: 1;
+    transform: translateX(-10px);
 }
 
 /* ****************** auto detail click******************** */
@@ -1669,12 +1782,6 @@ footer {
 .auto-detail-3 .detail.box-3 {
     top: 41%;
     left: 76%;
-}
-
-@media screen and (max-width: 720px) {
-    .detail {
-        display: none;
-    }
 }
 
 .detail a {
@@ -1744,6 +1851,28 @@ footer {
     background: rgba(196, 5, 5, 0.84);
     z-index: 20;
 }
+#box-1.detail-box.open ~ .navigate-to.scroll-next {
+    transition-duration: 0s;
+    visibility: hidden;
+}
+@media screen and (max-width: 425px) {       
+    .autodetail-pagecontent .col-xs-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 220px;
+    }
+    .autoDetail-gallery .gallery-item img {
+        height: 50vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+@media screen and (max-width: 768px) {   
+    .detail-box.open ~ .navigate-to.scroll-next span {
+        transition-duration: 0s;
+        visibility: hidden;
+    }
+}
 
 .detail-box h5 {
     font-size: 26px;
@@ -1757,6 +1886,27 @@ footer {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 2.4375rem;
+}
+@media screen and (max-width:768px) {
+    .detail-box p{
+        margin: 30px 0 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    .detail-box h5{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .detail-box p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width:540px) {
+    .detail-box {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
 }
 
 .detail-box li {

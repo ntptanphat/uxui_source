@@ -2,10 +2,12 @@
 function resize() {
     var vheight = $(window).height();
     var vwidth = $(window).width();
-    $('.fullsize-background').css({
-      'height': vheight,
-      'width': vwidth 
-    });
+    if($(window).width() > 768) {
+        $('.fullsize-background').css({
+            'height': vheight,
+            'width': vwidth 
+          });
+    }   
   };
   
   // The scroll-up function

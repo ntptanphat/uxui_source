@@ -104,7 +104,22 @@
     <main>
         <section class="autodetail-pagecontent">
             <div class="container-fluid">
-                <div class="row autoDetail-topcontent fullsize-background gallery-detail-image auto-detail-2">
+                <div class="row autoDetail-topcontent autoDetail-topcontent-intro fullsize-background gallery-detail-image auto-detail-2">
+                    <div class="autoDetail-intro">
+                        <div class="autoDetail-intro-info">
+                            <div class="autoDetail-intro-info-title">
+                                Why do we use it?
+                            </div>
+                            <div class="autoDetail-intro-info-description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigate-to scroll-next">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="row autoDetail-topcontent autoDetail-topcontent-detail fullsize-background gallery-detail-image auto-detail-2">
                     <img src="assets/images/auto/details/main2.jpg" alt="">
                     <!-- Box 1 -->
                     <div class="detail box-1" style="cursor: pointer;">
@@ -165,11 +180,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /Box 3 -->
+                    <!-- /Box 3 -->                    
+                    <div class="navigate-to scroll-next sp-dn">
+                        <span></span>
+                    </div>
                     <a href="auto.html?id=1" class="autodetail-back-to"></a>
                 </div>
                 <div class="row autoDetail-gallery fullsize-background">
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/21.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -182,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/22.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -195,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/23.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -208,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/24.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -221,7 +239,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/25.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -234,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 p-0 gallery-item">
+                    <div class="col-lg-4 col-md-6 col-xs-6 p-0 gallery-item">
                         <img src="assets/images/auto/details/26.jpg" alt="">
                         <div class="gallery-item_inner">
                             <div class="inner-wrap">
@@ -251,6 +269,29 @@
             </div>
         </section>
     </main>
+    <!-- footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-left">
+                            ©2020 Car Custom Design. All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-media float-right">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="loader"></div>
+    
     <!-- ***************************************** -->
     <section id="main-nav-container">
         <a href="#" class="close-button"></a>
@@ -308,28 +349,6 @@
         </div>
     </section>
     <!-- End of Main Nav -->
-    <!-- footer-->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-left">
-                            ©2020 Car Custom Design. All Rights Reserved.
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="social-media float-right">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="loader"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="assets/js/jquery-2.2.4.min.js"></script>
@@ -347,7 +366,7 @@
         $(document).ready(function() { 
             setTimeout(function(){
                 $('body').addClass('loaded');
-            }, 2000);
+            }, 1000);
         });
     </script>
 
