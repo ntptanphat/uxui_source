@@ -2055,11 +2055,17 @@ main.gallery {
 }
 .gallery .gallery-navigation-back {
     display: inline-block;
-    width: 50px;
-    height: 40px;
-    /* background-color: red; */
+    width: 30px;
+    height: 30px;
     background: url('../images/icons/arrow-left.png') no-repeat center;
     background-size: cover;
+    opacity: 0.6;
+    transition: all 0.125s ease-in;
+}
+
+.gallery .gallery-navigation-back:hover {
+    opacity: 1;
+    transform: translateX(-10px);
 }
 .gallery .gallery-navigation.is-show {
     opacity: 0.77;

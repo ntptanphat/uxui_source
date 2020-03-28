@@ -6,8 +6,13 @@
     background-attachment: fixed;
 }
 
+.gallery .panel-filter {
+    transition: all 0.425s ease-in;
+}
+
 #gallery .section-is-filter {
     text-align: center;
+    transition: all 0.425s ease-out;
 }
 
 #gallery .section-is-filter .list-filter {
@@ -32,6 +37,22 @@
     color: grey;
     text-decoration: none;
 }
+
+.gallery .panel-filter.fixed {
+    position: fixed;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+.gallery .panel-filter.fixed .section-is-filter {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: black;
+}
+.gallery .panel-filter.fixed .section-is-filter .list-filter {
+    margin-bottom: 0 !important;
+ }
 
 @media screen and (max-width: 425px) {
     #gallery .section-is-filter .list-filter .filter-tab {
