@@ -8,7 +8,7 @@
 			if(!$panelFilter.hasClass('fixed')) {
 				$panelFilter.addClass('fixed');
 			}
-		} else {
+		} else if(currentScroll < 200) {
 			if($panelFilter.hasClass('fixed')) {
 				$panelFilter.removeClass('fixed');
 			}
