@@ -1361,7 +1361,7 @@ footer {
     width: 36px;
     height: 56px;
     transition: all 0.15s ease;
-    opacity: 0.425;
+    opacity: 0.225;
 }
 .auto-carousel.owl-carousel .owl-nav button.owl-prev:before,
 .auto-carousel.owl-carousel .owl-nav button.owl-prev:after,
@@ -1539,6 +1539,7 @@ footer {
    font-size: 46px;
    font-weight: bold;
    color: #ed472e;
+   margin-bottom: 15px;
 }
 .autoDetail-intro .autoDetail-intro-info-description {
     font-size: 20px;
