@@ -2244,6 +2244,7 @@ main.gallery {
     .news-detail-wrap-content .content-img img {
        width: 750px;
        height: 500px;
+       object-fit: cover;
     }
 }
 .news-detail-wrap-content .content-img-title {
