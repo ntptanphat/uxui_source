@@ -1851,7 +1851,7 @@ footer {
     background: rgba(196, 5, 5, 0.84);
     z-index: 20;
 }
-#box-1.detail-box.open ~ .navigate-to.scroll-next {
+.detail-box.open ~ .navigate-to.scroll-next {
     transition-duration: 0s;
     visibility: hidden;
 }
