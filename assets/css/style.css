@@ -45,7 +45,16 @@ ul {
     text-align: center;
     z-index: 100;
     background-color: black;
+    transition: all .125s ease-in;
     display: none;
+}
+.scrollup:active,
+.scrollup:focus {
+    color: #fff;
+}
+.scrollup:hover {
+    color: #fff;
+    transform: translateY(-10px);
 }
 
 /* Close Button */
@@ -883,7 +892,7 @@ footer {
     padding: 30px;
     padding-bottom: 0;
     padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.77);
 }
 @media (max-width: 425px) {        
     .accessoriesdetail-main-content {
@@ -1032,7 +1041,7 @@ footer {
 }
 @media (max-width: 425px) {    
     .accessoriesdetail-slide .item {       
-        height: 220px;
+        height: 120px;
     }
 }
 .accessoriesdetail-lights .accessoriesdetail-slide .item, 
@@ -1051,7 +1060,9 @@ footer {
 .accessoriesdetail-wheel .accessoriesdetail-main-image-wrap {
     border-color: #052c3b;
 }
-
+.accessoriesdetail-bottom .owl-carousel .owl-nav {
+    margin-top: 0;
+}
 
 .accessoriesdetail-slide .item img {
     cursor: pointer;
@@ -1062,7 +1073,7 @@ footer {
 .accessoriesdetail-main-content-title {
     font-size: 36px;
 }
-@media (max-width: 1024px) {    
+@media (max-width: 1366px) {    
     .accessoriesdetail-main-content-title {
         font-size: 26px;
     }
@@ -2326,8 +2337,8 @@ main.gallery {
 .news-detail-container {
     padding-top: 40px;
 }
-.news-sidebar {
-    padding-top: 20px;
+.news .news-maincontent .heading {
+    margin-bottom: 12px;
 }
 .news-sidebar .news-sidebar-block {
     margin-bottom: 40px;
@@ -2469,8 +2480,8 @@ main.gallery {
 }
 @media (max-width: 1440px) {    
     .services .services-item .services-item-image {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         padding: 10px;
     }
 }
@@ -2668,7 +2679,8 @@ ul.tabs li.current {
 }
 /* Guarantee */
 .guarantee {
-    padding-top: 120px
+    padding-top: 120px;
+    padding-bottom: 40px;
 }
 img { max-width: 100%;}
 
@@ -2915,9 +2927,21 @@ img { max-width: 100%;}
 }
  .heading.heading-center {
      width: 100%;
-     font-style: 36px;
+     text-align: center;
+     font-size: 34px;
      font-weight: 700;
+     padding-left: 0;
  } 
+ @media (max-width: 1441px) {   
+    .heading.heading-center {       
+        font-size: 28px;
+    }
+}
+ @media (max-width: 768px) {   
+    .heading.heading-center {
+        font-size: 24px;
+    }
+}
   .heading.heading-center:before,
   .heading.heading-center:after {
     content: none;

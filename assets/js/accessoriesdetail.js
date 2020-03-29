@@ -126,7 +126,7 @@
             title: 'Ghế bọc da Đỏ/Đen  *Diamond* Luxury',
             imgSrc: 'assets/images/accessories/seat/3.jpg',
             description: 'Bảo vệ ghế xe được thực hiện bởi cửa hàng xe hơi tùy chỉnh',
-            featured: '<p>hất lượng vật liệu: Da </p><p>Loại: Phổ thông </p><p>Loại: Áp dụng cho 90% mẫu xe </p><p>Cân nặng: 8,0kg </p><p>Chất liệu ★ - Da nhân tạo, dễ lau chùi, chống thấm nước, chống trơn trượt và chống mài mòn, chống cháy tốt, thích hợp cho 4 mùa </p><p>Cài đặt - Thiết kế lại nhỏ gọn, bao quanh tổng thể, không thay đổi, trượt, Cài đặt dễ dàng và nhanh chóng với các phụ kiện mạnh mẽ, Không yêu cầu kinh nghiệm chuyên nghiệp </p><p>Tính năng - Cổng đẩy túi khí dự trữ, nó sẽ không ảnh hưởng đến việc đẩy túi khí, Phù hợp với gối cổ và gối thắt lưng, nó có thể làm giảm mệt mỏi, đẹp và an toàn của bạn</p>'
+            featured: '<p>Chất lượng vật liệu: Da </p><p>Loại: Phổ thông </p><p>Loại: Áp dụng cho 90% mẫu xe </p><p>Cân nặng: 8,0kg </p><p>Chất liệu ★ - Da nhân tạo, dễ lau chùi, chống thấm nước, chống trơn trượt và chống mài mòn, chống cháy tốt, thích hợp cho 4 mùa </p><p>Cài đặt - Thiết kế lại nhỏ gọn, bao quanh tổng thể, không thay đổi, trượt, Cài đặt dễ dàng và nhanh chóng với các phụ kiện mạnh mẽ, Không yêu cầu kinh nghiệm chuyên nghiệp </p><p>Tính năng - Cổng đẩy túi khí dự trữ, nó sẽ không ảnh hưởng đến việc đẩy túi khí, Phù hợp với gối cổ và gối thắt lưng, nó có thể làm giảm mệt mỏi, đẹp và an toàn của bạn</p>'
         },
         {
             id: 4,
