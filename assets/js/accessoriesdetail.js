@@ -64,42 +64,42 @@
         {
             id: 1,
             title: 'XD844 PIKE Titanium ',
-            imgSrc: 'assets/images/accessories/wheel/1.jpg',
+            imgSrc: 'assets/images/accessories/wheel/1.png',
             description: "Các bánh xe Hiệu XD được chế tạo cho những người cần sự dụng trong đa dạng môi trường. Những bánh xe nhẹ, mạnh mẽ và được thử nghiệm trên đường đua này luôn tìm cách vượt qua thử thách tiếp theo và sẵn sàng phát triển mạnh trên những cung đường gò ghề và hỗn loạn , của những cuộc đua off road . ",
             featured: '<p>-Xây dựng nhẹ nhưng mạnh mẽ </p><p>-Thiết kế độc đáo phản ánh tính cách của bạn </p><p>-Hoàn thiện chống gỉ và chống mài mòn </p><p>-Cuộc đua được thử nghiệm cho hiệu suất không có sự cố </p><p>-Bảo hành 1 năm khi kết thúc * </p><p>-Bảo hành trọn đời về cấu trúc * </p>'
         },
         {
             id: 2,
             title: 'D508 OCTANE DEEP LIP Chrome ',
-            imgSrc: 'assets/images/accessories/wheel/2.jpg',
+            imgSrc: 'assets/images/accessories/wheel/2.png',
             description: 'Bánh xe Hiệu Fuel Deep Lip là thương hiệu hàng đầu. Chúng có cấu trúc cực kỳ bền và cung cấp khả năng chống ăn mòn và các yếu tố vô song, vì vậy hãy chắc chắn những bánh xe này sẽ chịu được sự khắc nghiệt nhất.',
             featured: '<p>-Được thiết kế để đưa kinh nghiệm lái xe của bạn thêm một bước nữa </p><p>-Thiết kế môi sâu cho xe tải lớn </p><p>-Xây dựng bền bỉ để chịu được các điều kiện địa hình đòi hỏi khắt khe </p><p>-Khả năng chống ăn mòn cao và các yếu tố khác </p>'
         },
         {
             id: 3,
             title: 'Replikaz® - Factory Alloy Wheels ',
-            imgSrc: 'assets/images/accessories/wheel/3.jpg',
+            imgSrc: 'assets/images/accessories/wheel/3.png',
             description: 'Bánh xe Alternikaz® sẽ giúp tự động khôi phục giao diện của xe bạn về tình trạng ban đầu và đảm bảo lái xe an toàn. Chúng được tạo ra bằng cách sử dụng các công nghệ tiên tiến để cung cấp độ tin cậy vượt trội mà bạn đang tìm kiếm. ',
             featured: '<p>-Được chế tạo theo tiêu chuẩn bánh xe OE </p><p>-Được chế tác từ vật liệu chất lượng cao </p><p>-Được thiết kế bằng cách sử dụng các công nghệ sản xuất sáng tạo </p><p>-Cung cấp tuổi thọ bánh xe lâu dài </p>'
         },
         {
             id: 4,
             title: 'VENOM Matte Black ',
-            imgSrc: 'assets/images/accessories/wheel/4.jpg',
+            imgSrc: 'assets/images/accessories/wheel/4.png',
             description: 'Nhanh nhẹn và tuyệt đỉnh , bánh xe này được thiết kế để bổ sung cho hiệu suất và tính thẩm mỹ cho chiếc xe của bạn. ',
             featured: '<p>-Máy tính cân bằng cho hoạt động trơn tru, không rung </p><p>-Được xây dựng từ vật liệu đúc cải tiến </p><p>-Thiết kế đa chấu hấp dẫn </p>'
         },
         {
             id: 5,
             title: 'FOX Brushed Gunmetal ',
-            imgSrc: 'assets/images/accessories/wheel/5.jpg',
+            imgSrc: 'assets/images/accessories/wheel/5.png',
             description: 'Bánh xe điều chỉnh cho những người đủ đẳng cấp để lái một chiếc Porsche. Được thiết kế và chế tạo bởi những người biết bạn muốn gì. Không thể tránh được vẻ ngoài mà bạn mong muốn.',
             featured: '<p>-Xây dựng bền cho việc sử dụng lâu dài </p><p>-Được thiết kế để phù hợp với mũ trung tâm OE, logo, đai ốc và bu lông </p><p>-Thiết kế tùy chỉnh đảm bảo vừa vặn </p>'
         },
         {
             id: 6,
             title: 'S602 AZZMACKA ',
-            imgSrc: 'assets/images/accessories/wheel/6.jpg',
+            imgSrc: 'assets/images/accessories/wheel/6.png',
             description: 'Các bánh xe cung cấp sự cân bằng hoàn hảo của trọng lượng và độ bền vật liệu, vì vậy bạn có thể tận dụng tối đa chiếc xe của mình cả trên đường đua và trên đường trường',
             featured: '<p>-Được rèn để tạo ra sức mạnh và độ bền tối đa </p><p>-Xây dựng nhẹ để cải thiện hiệu suất </p><p>-Thiết kế độc đáo giúp bạn nổi bật giữa đám đông </p><p>-Hoàn thiện cao cấp cho một cái nhìn cực ký nổi bật </p>'
         }
