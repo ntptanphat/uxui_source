@@ -1516,7 +1516,7 @@ footer {
 }
 @media (max-width: 1440px) {
     .auto-carousel .item .box-content .box-content-subtitle {
-        padding-left: 5%;
+        padding-left: 5.5%;
     }
     .auto-carousel .item .box-content .box-content-img {
         width: 46%;
