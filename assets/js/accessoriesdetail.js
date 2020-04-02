@@ -176,14 +176,14 @@
         {
             id: 4,  
             title: 'Vô Lăng Hiệu Merceds Bọc da màu đen ',
-            imgSrc: 'assets/images/accessories/steering_wheel/5.jpg',
+            imgSrc: 'assets/images/accessories/steering_wheel/4.jpg',
             description: 'Tay lái có tay cầm bằng sợi carbon và phần còn lại được bọc da cao cấp. Tay lái NRG chắc chắn sẽ cung cấp cho chiếc xe của bạn thêm khả năng kiểm soát và kiểu dáng.',
             featured: '<p>Đường kính bánh xe: 13,78 "/ 350mm </p><p>Độ sâu đĩa: phẳng </p><p>Màu bám: Sợi carbon </p><p>Hình dạng: Tròn </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>- Được chế tác tinh xảo từ những vật liệu cao cấp </p><p>- Được thiết kế để phù hợp với tiêu chuẩn chất lượng nghiêm ngặt </p><p>- Chất lượng cao với giá cả phù hợp với ngân sách </p>'
         },
         {
             id: 5,
             title: 'Vô lăng Hiệu Volkswagen',
-            imgSrc: 'assets/images/accessories/steering_wheel/6.jpg',
+            imgSrc: 'assets/images/accessories/steering_wheel/5.jpg',
             description: 'Sản phẩm này được làm bằng vật liệu chất lượng cao để phục vụ bạn trong nhiều năm tới. Được thiết kế sử dụng công nghệ tiên tiến và trong tâm trí khách hàng. Nó sẽ đáp ứng nhu cầu của bạn và cung cấp chất lượng tuyệt vời với chi phí phải chăng. ',
             featured: '<p>Đường kính dọc: 13 "/ 330mm </p><p>Đường kính ngang: 12,60 "/ 320mm </p><p>Độ sâu đĩa: phẳng Màu bám: </p><p>Đen Hình dạng: D-Shape </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>- Vật liệu cao cấp Khâu đen </p><p>- -Đường kính ngang 320mm / 12,6 " </p><p>- Đường kính dọc 330mm / 13 " Nói 5 mm Đáy phẳng </p>'
         },
@@ -197,7 +197,7 @@
         {
             id: 7,
             title: 'Vô Lăng Hiệu Audi Hybrid S ',
-            imgSrc: 'assets/images/accessories/steering_wheel/6.jpg',
+            imgSrc: 'assets/images/accessories/steering_wheel/7.jpg',
             description: 'Tay lái phẳng được làm bằng công nghệ composite độc quyền mới (sợi carbon và Dyneema®) có khả năng chịu lực cao hơn 300% so với vô lăng carbon và nhẹ hơn 20%. Được cung cấp với nút còi, chuẩn bị cài đặt bốn đáy (không bao gồm). Được hiện thực hóa và phát triển với sự hợp tác của Sébastien Ogier, nhà vô địch thế giới WRC với VW Motorsport. Da lộn màu đen. ',
             featured: '<p>Đường kính bánh xe: 12,60 "/ 320mm </p><p>Độ sâu đĩa: phẳng </p><p>Màu bám: Đen </p><p>Số lượng phát sinh: 3 </p><p>Đặc trưng: </p><p>- Được chế tác tinh xảo từ những vật liệu cao cấp </p><p>- Được thiết kế để phù hợp với tiêu chuẩn chất lượng nghiêm ngặt </p><p>- Chất lượng cao với giá cả phù hợp với ngân sách </p>'
         }
