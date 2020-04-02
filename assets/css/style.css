@@ -1506,8 +1506,16 @@ footer {
     font-weight: bold;
     color: #fff;
     line-height: 1.525em;
-    color: #ed472e;
     font-style: italic;
+    /* new */
+    padding-left: 7.5%;
+    margin-bottom: 7px;
+}
+.auto-carousel .item .box-content .box-content-img {
+   width: 67%;
+}
+.auto-carousel .item .box-content .box-content-img  img {
+    
 }
 @media (max-width: 768px) {
     .auto-carousel .item .box-content .box-content-subtitle {
