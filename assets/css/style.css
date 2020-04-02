@@ -1514,6 +1514,14 @@ footer {
 .auto-carousel .item .box-content .box-content-img {
    width: 67%;
 }
+@media (max-width: 1440px) {
+    .auto-carousel .item .box-content .box-content-subtitle {
+        padding-left: 4.7%;
+    }
+    .auto-carousel .item .box-content .box-content-img {
+        width: 40%;
+    }
+}
 .auto-carousel .item .box-content .box-content-img  img {
     
 }
