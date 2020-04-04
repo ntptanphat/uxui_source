@@ -2984,3 +2984,53 @@ img { max-width: 100%;}
   .heading.heading-uppercase {
      text-transform: uppercase;
  }
+ /* Banner */
+
+@keyframes zooming {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.025) scaleY(1.005);      
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+ .banner {
+     position: fixed;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 156px;
+     height: 70vh;
+     overflow: hidden;
+ }
+ .banner .inner {
+    width: 100%;
+    height: 70vh;    
+    overflow: hidden;
+    animation: zooming linear 2.25s infinite;
+}
+ .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* animation: zooming linear 1.75s infinite; */
+}
+ .banner.banner-left {
+    left: 0;
+}
+.banner.banner-left img {
+    object-position: left;
+}
+.banner.banner-right {
+    right: 0;
+}
+.banner.banner-right img {
+    object-position: right;
+}
+@media (max-width: 1024px) {   
+    .banner {
+        display: none !important;
+    }
+}
