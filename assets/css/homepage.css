@@ -176,6 +176,7 @@
 }
 .home #fp-nav ul li a:hover span {
     margin: -2px 0 0 -2px;
+    background-color: rgba(237, 71, 46, 0.7);
 }
 .home #fp-nav ul li a.active span:after {    
     background-color: rgba(237, 71, 46, 0.4);  

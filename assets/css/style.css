@@ -2431,6 +2431,7 @@ main.gallery {
 }
 .news-detail-container {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 .news .news-maincontent .heading {
     margin-bottom: 12px;
