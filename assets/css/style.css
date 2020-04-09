@@ -2987,17 +2987,6 @@ img { max-width: 100%;}
  }
  /* Banner */
 
-@keyframes zooming {
-    0% {
-        transform: scaleX(1);
-    }
-    50% {
-        transform: scaleX(1.025) scaleY(1.005);      
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
  .banner {
      position: fixed;
      top: 50%;
@@ -3010,13 +2999,11 @@ img { max-width: 100%;}
     width: 100%;
     height: 70vh;    
     overflow: hidden;
-    animation: zooming linear 2.25s infinite;
 }
  .banner img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* animation: zooming linear 1.75s infinite; */
 }
  .banner.banner-left {
     left: 0;
