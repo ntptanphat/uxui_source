@@ -633,7 +633,7 @@ footer {
 }
 @media (max-width: 425px) {
     .social-media-block .social-media {
-        padding-top: 10px;
+        padding-top: 20px;
     }
 }
 
@@ -2066,7 +2066,15 @@ footer {
     background-color: #000;
     color: #686868;
 }
-
+@media screen and (max-width:540px) {
+    .footer {
+        padding: 20px 15px;
+    }
+     .footer .text-left{
+        font-size: 13px;
+        text-align: center;
+    }
+}
 .social-media i {
     color: #686868;
     font-size: 24px;

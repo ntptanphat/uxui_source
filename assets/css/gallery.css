@@ -5,6 +5,14 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.gallery .gallery-container {
+   padding-left: 0; padding-right: 0;
+}
+@media (max-width: 425px) {    
+    .auto.gallery {
+        padding-bottom: 20px !important;
+    }
+}
 
 .gallery .panel-filter {
     transition: all 0.425s ease-in;
@@ -67,11 +75,11 @@
 
 @media screen and (max-width: 425px) {
     #gallery .section-is-filter .list-filter .filter-tab {
-        margin-bottom: 10px;
-        margin-right: 10px;
+        margin-bottom: 7px;
+        margin-right: 7px;
     }
     #gallery .section-is-filter .list-filter .filter-tab a {
-        font-size: 14px;
+        font-size: 12px;
     }
     #gallery .section-is-filter .list-filter {
         margin-bottom: 20px;
