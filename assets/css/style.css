@@ -56,6 +56,11 @@ ul {
     color: #fff;
     transform: translateY(-10px);
 }
+@media (max-width: 425px) {    
+    .scrollup {
+        bottom: 120px !important;
+    }
+}
 
 /* Close Button */
 
@@ -1612,17 +1617,23 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    .autoDetail-intro {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width:768px) {
     .autoDetail-topcontent-intro {
         min-height: 100vh;
     }
     .autoDetail-intro {
         width: 95%;
-        padding: 20px;
+        padding: 20px 10px;
     }
 }
 @media screen and (max-width:768px) {
     .gallery-detail-image {
-        height: 50vh;
+        height: 80vh;
     }
 }
 .navigate-to {
@@ -1668,7 +1679,8 @@ footer {
         padding: 20px;
     }
     .autoDetail-intro .autoDetail-intro-info-title {
-        font-size: 36px;
+        font-size: 30px;
+        line-height: 36px;
      }
      .autoDetail-intro .autoDetail-intro-info-description {
          font-size: 16px;
@@ -1746,6 +1758,12 @@ footer {
     position: relative;
     padding: 20px;
 }
+ @media screen and (max-width:768px) {    
+    .gallery-item_inner .inner-wrap .gallery-item_text .gallery-item_text_inner {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 .gallery-item_inner .inner-wrap .gallery-item_text .gallery-item_text_inner:before {
     content: '';
     position: absolute;
@@ -1816,7 +1834,20 @@ footer {
      bottom: 0;
      transition: all 0.65s ease 0.5s;
   }
-  
+@media screen and (max-width:540px) {        
+    .gallery-item_inner .inner-wrap .gallery-item_text .anim-rect2:after {
+        width: 2px;
+    }
+    .gallery-item_inner .inner-wrap .gallery-item_text .anim-rect2:before {
+        height: 2px;
+    }
+    .gallery-item_inner .inner-wrap .gallery-item_text .anim-rect1:after {
+        width: 2px;
+    }
+    .gallery-item_inner .inner-wrap .gallery-item_text .anim-rect1:before {
+       height: 2px;
+    }
+}
 .autoDetail-gallery .gallery-item:hover .gallery-item_text .anim-rect1:before {
     width: 100%;
 }
@@ -1900,6 +1931,23 @@ footer {
 .auto-detail-3 .detail.box-3 {
     top: 41%;
     left: 76%;
+}
+
+@media screen and (max-width: 425px) {       
+     .auto-detail-3 .detail.box-1 {
+        top: 20%;
+        left: 62%;
+    }
+
+    .auto-detail-3 .detail.box-2 {
+        top: 38%;
+        left: 37%;
+    }
+
+    .auto-detail-3 .detail.box-3 {
+        top: 51%;
+        left: 76%;
+    }
 }
 
 .detail a {
@@ -2072,7 +2120,7 @@ footer {
     }
      .footer .text-left{
         font-size: 13px;
-        text-align: center;
+        text-align: center !important;
     }
 }
 .social-media i {
